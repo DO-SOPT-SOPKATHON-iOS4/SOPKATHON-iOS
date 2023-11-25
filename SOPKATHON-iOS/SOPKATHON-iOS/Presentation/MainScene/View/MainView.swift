@@ -21,12 +21,11 @@ final class MainView: UIView {
     weak var buttonDelegate: MainButtonDelegate?
     
     // MARK: - UI Components
-    private let mainLaunchScreenView = MainLaunchScreenView()
+    let mainLaunchScreenView = MainLaunchScreenView()
     
-    private let mainTitleLabel: UILabel = {
+    public let mainTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "동훈,\n너 몇살이야?"
-        label.textColor = .white
+        label.textColor = .SOPTWhite
         label.font = .chab(size: 32)
         label.numberOfLines = 2
         return label
@@ -34,14 +33,14 @@ final class MainView: UIView {
     
     private let mainStartQuestionView: MainStartQuestionView =  {
         let view = MainStartQuestionView()
-        view.backgroundColor = .blue
+        view.backgroundColor = .SOPTBlue
         view.layer.cornerRadius = 60
         return view
     }()
     
     private let mainHistoryView: MainHistoryView = {
         let view = MainHistoryView()
-        view.backgroundColor = .green
+        view.backgroundColor = .SOPTGreen
         view.layer.cornerRadius = 60
         return view
     }()
@@ -73,6 +72,10 @@ extension MainView {
         self.mainHistoryView.isHidden = true
         showMainLaunchScreenView()
         
+    }
+    
+    func setDataBind(model: OnboardingEntity) {
+        mainTitleLabel.text = "\(model.nickName),\n너 몇살이야?"
     }
     
     private func setHierarchy() {

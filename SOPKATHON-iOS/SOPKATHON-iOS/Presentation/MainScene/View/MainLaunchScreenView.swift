@@ -11,21 +11,21 @@ class MainLaunchScreenView: UIView {
     
     // MARK: - Properties
 //    weak var buttonDelegate: ButtonDelegate?
-    let nickname: String = ""
-    let age: String = ""
+//    let nickname: String = ""
+//    let age: String = ""
     
     // MARK: - UI Components
-    private let mainTitleLabel: UILabel = {
+    let mainTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "동훈,\n너 정말 24살 맞아?"
-        label.textColor = .white
+        label.textColor = .SOPTWhite
+        label.font = .pretendardBold(size: 28)
         label.numberOfLines = 2
         return label
     }()
     
     private let mainImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "folder.fill")
+        imageView.image = ImageLiterals.onboarding_character
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -54,6 +54,10 @@ class MainLaunchScreenView: UIView {
 extension MainLaunchScreenView {
     private func setUI() {
         self.backgroundColor = .black
+    }
+    
+    func setDataBind(model: OnboardingEntity) {
+        mainTitleLabel.text = "\(model.nickName),\n너 정말 \(model.realAge)살 맞아?"
     }
     
     private func setHierarchy() {
