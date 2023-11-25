@@ -15,20 +15,21 @@ final class CardBackView: UIView {
     
     let backView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .SOPTYellow
         return view
     }()
     
     private let imageView: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "apple.logo")
+        image.layer.cornerRadius = 30
         return image
     }()
 
     private let backTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "어리숙한 귀요미"
-        label.textColor = .black
+        label.textColor = .SOPTBlack
+        label.font = .pretendardBold(size: 32)
         label.textAlignment = .center
         return label
     }()
@@ -44,7 +45,16 @@ final class CardBackView: UIView {
         label.text = "어리숙한 귀요미\n\ndjdj"
         label.textColor = .black
         label.numberOfLines = 0
+        label.font = .pretendardRegular(size: 18)
         label.textAlignment = .center
+        return label
+    }()
+    
+    private let touchLabel: UILabel = {
+        let label = UILabel()
+        label.text = "카드를 터치해주세요!"
+        label.textColor = .SOPTGrey400
+        label.font = .pretendardBold(size: 20)
         return label
     }()
     
@@ -64,21 +74,21 @@ final class CardBackView: UIView {
 
 extension CardBackView {
     func setUI() {
-        backgroundColor = .red
+        backView.layer.cornerRadius = 50
+        backgroundColor = .SOPTBlack
     }
     
     func setHierarchy() {
         backView.addSubviews(imageView, backTitleLabel, seperatorView, backContentLabel)
-        addSubview(backView)
+        addSubviews(backView, touchLabel)
     }
     
     func setLayout() {
         backView.snp.makeConstraints {
-//            $0.top.equalTo(safeAreaLayoutGuide).offset(31)
-//            $0.centerX.equalToSuperview()
-//            $0.width.equalTo(305)
-//            $0.height.equalTo(441)
-            $0.edges.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide).offset(31)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(305)
+            $0.height.equalTo(441)
         }
         
         imageView.snp.makeConstraints {
@@ -102,5 +112,16 @@ extension CardBackView {
             $0.top.equalTo(seperatorView.snp.bottom).offset(29)
             $0.leading.trailing.equalToSuperview().inset(39)
         }
+        
+        touchLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(130)
+        }
+    }
+    
+    func setDataBind(model: CardEntity) {
+        imageView.kfSetImage(url: model.imgURL)
+        backTitleLabel.text = model.title
+        backContentLabel.text = model.content
     }
 }

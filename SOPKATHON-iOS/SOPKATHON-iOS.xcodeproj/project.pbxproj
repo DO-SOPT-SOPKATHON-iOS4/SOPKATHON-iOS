@@ -59,6 +59,9 @@
 		A42E1A402B1267340061614E /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A3F2B1267340061614E /* CardBackView.swift */; };
 		A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A432B127E3F0061614E /* CardFrontViewController.swift */; };
 		A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A452B127E7C0061614E /* CardBackViewController.swift */; };
+		A42E1A492B12867E0061614E /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A482B12867E0061614E /* CardEntity.swift */; };
+		A42E1A4B2B128F710061614E /* QuestionListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A4A2B128F710061614E /* QuestionListEntity.swift */; };
+		A42E1A4D2B128F9B0061614E /* QuestionGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */; };
 		CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA62B12563A00135337 /* HistoryViewController.swift */; };
 		CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */; };
 		CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */; };
@@ -120,6 +123,9 @@
 		A42E1A3F2B1267340061614E /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 		A42E1A432B127E3F0061614E /* CardFrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontViewController.swift; sourceTree = "<group>"; };
 		A42E1A452B127E7C0061614E /* CardBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackViewController.swift; sourceTree = "<group>"; };
+		A42E1A482B12867E0061614E /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntity.swift; sourceTree = "<group>"; };
+		A42E1A4A2B128F710061614E /* QuestionListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListEntity.swift; sourceTree = "<group>"; };
+		A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGetService.swift; sourceTree = "<group>"; };
 		CA9DAAA62B12563A00135337 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
@@ -278,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2442B11F90C004CBD6F /* ExampleEntity.swift */,
+				A42E1A482B12867E0061614E /* CardEntity.swift */,
+				A42E1A4A2B128F710061614E /* QuestionListEntity.swift */,
 				CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */,
 			);
 			path = Entity;
@@ -287,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2462B11F916004CBD6F /* ExampleService.swift */,
+				A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */,
 				CA9DAAB82B12938300135337 /* GetHistoryService.swift */,
 			);
 			path = Services;
@@ -613,10 +622,12 @@
 				3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */,
 				3CEDC23D2B11F8B8004CBD6F /* ColorLiterals.swift in Sources */,
 				A42E1A3E2B125D4C0061614E /* CardViewController.swift in Sources */,
+				A42E1A4D2B128F9B0061614E /* QuestionGetService.swift in Sources */,
 				A42E1A0F2B123D770061614E /* UIButton+.swift in Sources */,
 				3CEDC2582B1261FA004CBD6F /* UINavigationController+.swift in Sources */,
 				A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */,
 				A42E1A402B1267340061614E /* CardBackView.swift in Sources */,
+				A42E1A492B12867E0061614E /* CardEntity.swift in Sources */,
 				A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */,
 				CA9DAAB32B12875700135337 /* SplashView.swift in Sources */,
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
@@ -643,6 +654,7 @@
 				CA9DAAB92B12938300135337 /* GetHistoryService.swift in Sources */,
 				3CEDC2602B126AF1004CBD6F /* MainHistoryView.swift in Sources */,
 				CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */,
+				A42E1A4B2B128F710061614E /* QuestionListEntity.swift in Sources */,
 				A42E1A082B1201070061614E /* Config.swift in Sources */,
 				A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */,
 				CA9DAAB52B12876700135337 /* SplashViewController.swift in Sources */,
