@@ -19,6 +19,18 @@
 		3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC2442B11F90C004CBD6F /* ExampleEntity.swift */; };
 		3CEDC2472B11F916004CBD6F /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC2462B11F916004CBD6F /* ExampleService.swift */; };
 		3CEDC24B2B11F934004CBD6F /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC24A2B11F934004CBD6F /* ExampleView.swift */; };
+		A42E19ED2B11FED30061614E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A42E19EC2B11FED30061614E /* SnapKit */; };
+		A42E19F02B11FEEA0061614E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A42E19EF2B11FEEA0061614E /* Alamofire */; };
+		A42E19F42B11FFD30061614E /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */; };
+		A42E19F62B11FFF70061614E /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19F52B11FFF70061614E /* UIStackView+.swift */; };
+		A42E19F82B1200130061614E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19F72B1200130061614E /* UIColor+.swift */; };
+		A42E19FA2B1200300061614E /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19F92B1200300061614E /* NSObject+.swift */; };
+		A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19FD2B12009D0061614E /* NetworkConstant.swift */; };
+		A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19FF2B1200A70061614E /* NetworkResult.swift */; };
+		A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A012B1200B30061614E /* GenericResponse.swift */; };
+		A42E1A042B1200E10061614E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A032B1200E10061614E /* BaseService.swift */; };
+		A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A052B1200FA0061614E /* URLConstant.swift */; };
+		A42E1A082B1201070061614E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A072B1201070061614E /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +48,16 @@
 		3CEDC2442B11F90C004CBD6F /* ExampleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleEntity.swift; sourceTree = "<group>"; };
 		3CEDC2462B11F916004CBD6F /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 		3CEDC24A2B11F934004CBD6F /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
+		A42E19F52B11FFF70061614E /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		A42E19F72B1200130061614E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		A42E19F92B1200300061614E /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		A42E19FD2B12009D0061614E /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		A42E19FF2B1200A70061614E /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		A42E1A012B1200B30061614E /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		A42E1A032B1200E10061614E /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		A42E1A052B1200FA0061614E /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		A42E1A072B1201070061614E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42E19ED2B11FED30061614E /* SnapKit in Frameworks */,
+				A42E19F02B11FEEA0061614E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,8 @@
 		3CEDC2322B11F7BB004CBD6F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A42E19FC2B1200930061614E /* Config */,
+				A42E19FB2B12008C0061614E /* Base */,
 				3CEDC2432B11F8FD004CBD6F /* Services */,
 				3CEDC2422B11F8F8004CBD6F /* Entity */,
 			);
@@ -127,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2402B11F8EA004CBD6F /* UITableViewRegisterable.swift */,
+				A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -135,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC23E2B11F8C3004CBD6F /* UIView+.swift */,
+				A42E19F52B11FFF70061614E /* UIStackView+.swift */,
+				A42E19F72B1200130061614E /* UIColor+.swift */,
+				A42E19F92B1200300061614E /* NSObject+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -175,8 +205,8 @@
 		3CEDC2482B11F91A004CBD6F /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				3CEDC24C2B11F937004CBD6F /* ViewController */,
 				3CEDC2492B11F927004CBD6F /* View */,
+				3CEDC24C2B11F937004CBD6F /* ViewController */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -197,6 +227,26 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A42E19FB2B12008C0061614E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A42E19FD2B12009D0061614E /* NetworkConstant.swift */,
+				A42E19FF2B1200A70061614E /* NetworkResult.swift */,
+				A42E1A012B1200B30061614E /* GenericResponse.swift */,
+				A42E1A032B1200E10061614E /* BaseService.swift */,
+				A42E1A052B1200FA0061614E /* URLConstant.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A42E19FC2B1200930061614E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A42E1A072B1201070061614E /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,6 +263,10 @@
 			dependencies = (
 			);
 			name = "SOPKATHON-iOS";
+			packageProductDependencies = (
+				A42E19EC2B11FED30061614E /* SnapKit */,
+				A42E19EF2B11FEEA0061614E /* Alamofire */,
+			);
 			productName = "SOPKATHON-iOS";
 			productReference = 3CEDC2192B11F710004CBD6F /* SOPKATHON-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +295,10 @@
 				Base,
 			);
 			mainGroup = 3CEDC2102B11F710004CBD6F;
+			packageReferences = (
+				A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A42E19EE2B11FEEA0061614E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3CEDC21A2B11F710004CBD6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,12 +328,22 @@
 				3CEDC23F2B11F8C3004CBD6F /* UIView+.swift in Sources */,
 				3CEDC2472B11F916004CBD6F /* ExampleService.swift in Sources */,
 				3CEDC23B2B11F8AF004CBD6F /* FontLiterals.swift in Sources */,
+				A42E19F42B11FFD30061614E /* UICollectionViewRegisterable.swift in Sources */,
 				3CEDC2212B11F710004CBD6F /* ViewController.swift in Sources */,
 				3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */,
 				3CEDC23D2B11F8B8004CBD6F /* ColorLiterals.swift in Sources */,
+				A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */,
+				A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */,
+				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
+				A42E19F62B11FFF70061614E /* UIStackView+.swift in Sources */,
 				3CEDC21F2B11F710004CBD6F /* SceneDelegate.swift in Sources */,
+				A42E19F82B1200130061614E /* UIColor+.swift in Sources */,
 				3CEDC2412B11F8EA004CBD6F /* UITableViewRegisterable.swift in Sources */,
+				A42E19FA2B1200300061614E /* NSObject+.swift in Sources */,
+				A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */,
 				3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */,
+				A42E1A082B1201070061614E /* Config.swift in Sources */,
+				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
 				3CEDC24B2B11F934004CBD6F /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -403,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,7 +493,6 @@
 				INFOPLIST_FILE = "SOPKATHON-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +520,6 @@
 				INFOPLIST_FILE = "SOPKATHON-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +557,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A42E19EE2B11FEEA0061614E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A42E19EC2B11FED30061614E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A42E19EF2B11FEEA0061614E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A42E19EE2B11FEEA0061614E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3CEDC2112B11F710004CBD6F /* Project object */;
 }
