@@ -23,14 +23,14 @@ class QuestionViewController: UIViewController {
     
     let cardStack = SwipeCardStack()
       
-    var cardImages: [String] = []
+    var cardImages: [String] = ["약국에서 텐텐 사 먹어 본 적 있어?", "너 첫 차는 타 봤니?", "평소 가방에 샤프 챙겨 다녀?", "구슬 아이스크림 내돈내산 해봤어?", "술 먹고 택시에서 토해봤어?", "부모님께 용돈 드려봤어?", "카페인을 보충하면 살아나?", "아침에 일어나는게 힘들어?", "해장 술 해봤어?", "놀이공원에 놀러갈 때 교복 입고 갈 거야?"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         cardStack.dataSource = self
         self.view.backgroundColor = .black
         self.setLayout()
-        getQuestionListAPI()
+//        getQuestionListAPI()
     }
     // MARK: - setLayout()
     private func setLayout() {
