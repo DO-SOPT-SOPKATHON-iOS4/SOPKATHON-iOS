@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "go_to_question.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

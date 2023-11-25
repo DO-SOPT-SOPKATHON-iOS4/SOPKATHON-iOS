@@ -26,7 +26,7 @@ final class ExampleView: UIView {
     
     private lazy var button: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .TablingPrimary
+//        button.backgroundColor = .TablingPrimary
         button.setTitle("버튼", for: .normal)
         button.layer.cornerRadius = 24
         return button
@@ -52,32 +52,32 @@ final class ExampleView: UIView {
 
 // MARK: - Extensions
 extension ExampleView {
-    func setUI() {
+    private func setUI() {
         
     }
     
-    func setHierarchy() {
+    private func setHierarchy() {
 
     }
     
-    func setLayout() {
+    private func setLayout() {
 
     }
     
-    func setAddTarget() {
+    private func setAddTarget() {
 
     }
     
     @objc
-    func buttonTapped() {
+    private func buttonTapped() {
         
     }
     
-    func setRegisterCell() {
+    private func setRegisterCell() {
         
     }
     
-    func setDataBind() {
+    private func setDataBind() {
         
     }
 }
