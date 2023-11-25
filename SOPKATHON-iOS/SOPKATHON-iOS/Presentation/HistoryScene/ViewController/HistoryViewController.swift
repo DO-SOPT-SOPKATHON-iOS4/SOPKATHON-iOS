@@ -56,7 +56,10 @@ class HistoryViewController: UIViewController {
     
     @objc
     func goToMain(){
-        
+        let nav = MainViewController()
+        nav.nickname = "동훈"
+        nav.age = 24
+        self.navigationController?.pushViewController(nav, animated: false)
     }
 }
 
@@ -106,7 +109,16 @@ extension HistoryViewController {
     }
 }
 
-extension HistoryViewController: UICollectionViewDelegate {}
+extension HistoryViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let nav = CardFrontViewController()
+        nav.cardfront.setHistoryBind(model: historyListEntity[indexPath.item])
+        nav.historyTitle = historyListEntity[indexPath.item].title
+        nav.historyContent = historyListEntity[indexPath.item].content
+        self.present(nav, animated: false)
+    }
+    
+}
 
 extension HistoryViewController: UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {

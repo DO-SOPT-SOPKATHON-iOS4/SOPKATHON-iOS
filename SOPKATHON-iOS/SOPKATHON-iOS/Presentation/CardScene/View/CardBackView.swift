@@ -21,7 +21,6 @@ final class CardBackView: UIView {
     
     private let imageView: UIImageView = {
         let image = UIImageView()
-        image.layer.cornerRadius = 30
         return image
     }()
 
@@ -94,8 +93,8 @@ extension CardBackView {
         imageView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(83)
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(54)
-            $0.height.equalTo(36)
+            $0.width.equalTo(36)
+            $0.height.equalTo(54)
         }
         
         backTitleLabel.snp.makeConstraints {
@@ -123,5 +122,40 @@ extension CardBackView {
         imageView.kfSetImage(url: model.imgURL)
         backTitleLabel.text = model.title
         backContentLabel.text = model.content
+    }
+    
+    func setHistoryBind(title: String, content: String) {
+        switch title {
+        case "어리숙한 귀요미":
+            self.imageView.image = ImageLiterals.history_level1
+            self.backView.backgroundColor = .SOPTYellow
+            self.imageView.snp.updateConstraints {
+                $0.width.equalTo(54)
+                $0.height.equalTo(36)
+            }
+        case "말랑한 깜찍이":
+            self.imageView.image = ImageLiterals.history_level2
+            self.backView.backgroundColor = .SOPTOrange
+            self.imageView.snp.updateConstraints {
+                $0.width.equalTo(54)
+                $0.height.equalTo(36)
+            }
+        case "성장중인 새싹이":
+            self.imageView.image = ImageLiterals.history_level3
+            self.backView.backgroundColor = .SOPTBlue
+            self.imageView.snp.updateConstraints {
+                $0.width.equalTo(54)
+                $0.height.equalTo(36)
+            }
+        case "성숙한 멋쟁이":
+            self.imageView.image = ImageLiterals.history_level4
+            self.backView.backgroundColor = .SOPTGreen
+        case "진정한 어른이":
+            self.backView.backgroundColor = .SOPTRed
+            self.imageView.image = ImageLiterals.history_level5
+        default: break
+        }
+        backTitleLabel.text = title
+        backContentLabel.text = content
     }
 }
