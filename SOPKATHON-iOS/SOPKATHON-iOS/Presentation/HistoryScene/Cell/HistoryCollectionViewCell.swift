@@ -18,6 +18,7 @@ class HistoryCollectionViewCell: UICollectionViewCell, UICollectionViewRegistera
         let view = UIImageView()
         view.image = ImageLiterals.history_level1
         view.backgroundColor = .clear
+        view.contentMode = .scaleAspectFit
         return view
     }()
     private lazy var divider: UIView = {

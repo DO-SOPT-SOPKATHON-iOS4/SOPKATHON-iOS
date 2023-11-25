@@ -21,6 +21,8 @@ final class CardFrontView: UIView {
     
     private let imageView: UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.backgroundColor = .SOPTBlack
         image.layer.cornerRadius = 30
         return image
     }()
@@ -140,6 +142,25 @@ extension CardFrontView {
     func setDataBind(model: CardEntity) {
         imageView.kfSetImage(url: model.imgURL)
         detailLabel.text = model.nickname
+        ageLabel.text = "\(model.resultAge)살"
+    }
+    
+    func setHistoryBind(model: GetHistoryData) {
+        switch model.title {
+        case "어리숙한 귀요미":
+            self.frontView.backgroundColor = .SOPTYellow
+        case "말랑한 깜찍이":
+            self.frontView.backgroundColor = .SOPTOrange
+        case "성장중인 새싹이":
+            self.frontView.backgroundColor = .SOPTBlue
+        case "성숙한 멋쟁이":
+            self.frontView.backgroundColor = .SOPTGreen
+        case "진정한 어른이":
+            self.frontView.backgroundColor = .SOPTRed
+        default: break
+        }
+        imageView.kfSetImage(url: model.imgUrl1)
+        detailLabel.text = model.title
         ageLabel.text = "\(model.resultAge)살"
     }
 }
