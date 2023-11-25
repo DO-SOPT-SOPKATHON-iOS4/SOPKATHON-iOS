@@ -52,32 +52,32 @@ final class ExampleView: UIView {
 
 // MARK: - Extensions
 extension ExampleView {
-    func setUI() {
+    private func setUI() {
         
     }
     
-    func setHierarchy() {
+    private func setHierarchy() {
 
     }
     
-    func setLayout() {
+    private func setLayout() {
 
     }
     
-    func setAddTarget() {
+    private func setAddTarget() {
 
     }
     
     @objc
-    func buttonTapped() {
+    private func buttonTapped() {
         
     }
     
-    func setRegisterCell() {
+    private func setRegisterCell() {
         
     }
     
-    func setDataBind() {
+    private func setDataBind() {
         
     }
 }

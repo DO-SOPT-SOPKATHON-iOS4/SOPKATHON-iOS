@@ -1,26 +1,26 @@
 //
-//  ViewController.swift
+//  OnboardingNicknameViewController.swift
 //  SOPKATHON-iOS
 //
-//  Created by 변상우 on 11/25/23.
+//  Created by 변상우 on 11/26/23.
 //
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class OnboardingNicknameViewController: UIViewController {
 
     // MARK: - Properties
     
     // MARK: - UI Components
     
-    private let myView = ExampleView()
+    private let rootView = OnboardingNicknameView()
     
     // MARK: - Life Cycles
     
     override func loadView() {
         super.loadView()
         
-        view = myView
+        view = rootView
     }
     
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ final class ViewController: UIViewController {
 }
 
 // MARK: - Extensions
-extension ViewController {
+extension OnboardingNicknameViewController {
     private func setUI() {
         
     }
@@ -49,26 +49,20 @@ extension ViewController {
     }
     
     private func setDelegate() {
-        
+        rootView.buttonDelegate = self
     }
 }
 
 // MARK: - Network
 
-extension ViewController {
+extension OnboardingNicknameViewController {
     private func getAPI() {
         
     }
 }
 
-//extension ViewController: UICollectionViewDelegate {
-//
-//}
-//
-//extension ViewController: UICollectionViewDataSource {
-//
-//}
-//
-//extension ViewController: UICollectionViewFlowLayout {
-//
-//}
+extension OnboardingNicknameViewController: ButtonDelegate {
+    func nextButtonTapped() {
+        self.navigationController?.pushViewController(OnboardingAgeViewController(), animated: true)
+    }
+}
