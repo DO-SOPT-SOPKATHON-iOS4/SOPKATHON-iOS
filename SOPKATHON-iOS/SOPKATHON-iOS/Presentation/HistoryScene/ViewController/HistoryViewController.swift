@@ -22,8 +22,8 @@ class HistoryViewController: UIViewController {
         return label
     }()
     private lazy var mainBtn: UIBarButtonItem = {
-        let btn = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(goToMain))
-        btn.tintColor = .systemPink
+        let btn = UIBarButtonItem(image: UIImage(named: "Q1_ic_left_arrow"), style: .done, target: self, action: #selector(goToMain))
+        btn.tintColor = UIColor(hex: "#6F6F6F")
         return btn
     }()
     
@@ -40,6 +40,8 @@ class HistoryViewController: UIViewController {
         
         self.navigationItem.titleView = titleView
         self.navigationItem.leftBarButtonItem = mainBtn
+        self.navigationController?.navigationBar.barTintColor = .black
+        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.leftItemsSupplementBackButton = true
         self.navigationController?.navigationBar.backgroundColor = .black
         setUI()

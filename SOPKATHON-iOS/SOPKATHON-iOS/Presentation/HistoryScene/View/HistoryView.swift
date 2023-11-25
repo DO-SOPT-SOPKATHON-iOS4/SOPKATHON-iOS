@@ -10,28 +10,7 @@ final class HistoryView: UIView {
     
     // MARK: - UI Components
     
-    private lazy var homeBtn: UIButton = {
-       let btn = UIButton()
-//        btn.setImage(<#T##image: UIImage?##UIImage?#>, for: .normal)
-        btn.backgroundColor = .systemGray2
-        return btn
-    }()
     private lazy var historyCardView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-        
-//    private let imageView: UIImageView = {
-//        let image = UIImageView()
-//        image.contentMode = .scaleAspectFill
-//        image.image = UIImage(systemName: "apple.logo")
-//        return image
-//    }()
-//
-//    private lazy var button: UIButton = {
-//        let button = UIButton()
-//        button.backgroundColor = .TablingPrimary
-//        button.setTitle("버튼", for: .normal)
-//        button.layer.cornerRadius = 24
-//        return button
-//    }()
     
     // MARK: - Life Cycles
     
