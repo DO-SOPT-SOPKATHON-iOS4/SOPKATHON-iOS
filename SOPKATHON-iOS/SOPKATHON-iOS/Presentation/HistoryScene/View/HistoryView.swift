@@ -6,7 +6,6 @@ final class HistoryView: UIView {
 
     // MARK: - Properties
     
-//    var index: Int = 0
     
     // MARK: - UI Components
     

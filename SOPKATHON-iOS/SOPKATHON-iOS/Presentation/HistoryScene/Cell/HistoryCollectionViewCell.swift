@@ -10,28 +10,31 @@ class HistoryCollectionViewCell: UICollectionViewCell, UICollectionViewRegistera
     // MARK: - UI Components
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .white
+        label.textColor = .SOPTBlack
+        label.font = .pretendardBold(size: 28)
         return label
     }()
     private lazy var image: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(named: "level1")
+        view.image = ImageLiterals.history_level1
         view.backgroundColor = .clear
         return view
     }()
     private lazy var divider: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .SOPTBlack
         return view
     }()
     private lazy var contentLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .SOPTBlack
+        label.font = .pretendardRegular(size: 16)
         return label
     }()
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .SOPTBlack
+        label.font = .pretendardRegular(size: 12)
         return label
     }()
     
@@ -54,7 +57,7 @@ class HistoryCollectionViewCell: UICollectionViewCell, UICollectionViewRegistera
 
 extension HistoryCollectionViewCell {
     func setUI() {
-        self.contentView.backgroundColor = .gray
+        self.contentView.backgroundColor = .SOPTYellow
         self.contentView.layer.cornerRadius = 40
     }
     
@@ -76,6 +79,7 @@ extension HistoryCollectionViewCell {
         divider.snp.makeConstraints{
             $0.top.equalTo(titleLabel.snp.bottom).offset(10)
             $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(1)
         }
         contentLabel.snp.makeConstraints{
             $0.top.equalTo(divider.snp.bottom).offset(30)
@@ -88,7 +92,7 @@ extension HistoryCollectionViewCell {
     }
     
     func bindData() {
-        self.titleLabel.text = "당신은 성장중인 새싹이"
+        self.titleLabel.text = "성장중인 새싹이"
         self.contentLabel.text = "매일 매일 자라고 있는 당신! \n다음 달엔 얼마나 발전했을지 궁금한 걸?"
         self.dateLabel.text = "23.12.31"
     }
