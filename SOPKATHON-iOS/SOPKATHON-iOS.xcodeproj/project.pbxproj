@@ -11,9 +11,6 @@
 		047F91BE2B125AEB001EB577 /* Shuffle in Frameworks */ = {isa = PBXBuildFile; productRef = 047F91BD2B125AEB001EB577 /* Shuffle */; };
 		047F91C12B128E85001EB577 /* postQuestionreply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91C02B128E85001EB577 /* postQuestionreply.swift */; };
 		047F91C72B128F7E001EB577 /* postQuestionreplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91C62B128F7E001EB577 /* postQuestionreplyModel.swift */; };
-		047F91C92B129565001EB577 /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91C82B129565001EB577 /* CardEntity.swift */; };
-		047F91CB2B12AA67001EB577 /* QuestionGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91CA2B12AA67001EB577 /* QuestionGetService.swift */; };
-		047F91CD2B12AA8F001EB577 /* QuestionListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91CC2B12AA8F001EB577 /* QuestionListEntity.swift */; };
 		3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC21C2B11F710004CBD6F /* AppDelegate.swift */; };
 		3CEDC21F2B11F710004CBD6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC21E2B11F710004CBD6F /* SceneDelegate.swift */; };
 		3CEDC2212B11F710004CBD6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC2202B11F710004CBD6F /* ViewController.swift */; };
@@ -42,6 +39,7 @@
 		3CEDC26E2B128F92004CBD6F /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC26D2B128F92004CBD6F /* UIViewController+.swift */; };
 		3CEFB17E2B12988400BCC479 /* OnboardingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFB17D2B12988400BCC479 /* OnboardingEntity.swift */; };
 		3CEFB1802B12993500BCC479 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFB17F2B12993500BCC479 /* OnboardingService.swift */; };
+		3CEFB1822B12BA1000BCC479 /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A482B12867E0061614E /* CardEntity.swift */; };
 		A42E19ED2B11FED30061614E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A42E19EC2B11FED30061614E /* SnapKit */; };
 		A42E19F02B11FEEA0061614E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A42E19EF2B11FEEA0061614E /* Alamofire */; };
 		A42E19F42B11FFD30061614E /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */; };
@@ -67,7 +65,6 @@
 		A42E1A402B1267340061614E /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A3F2B1267340061614E /* CardBackView.swift */; };
 		A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A432B127E3F0061614E /* CardFrontViewController.swift */; };
 		A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A452B127E7C0061614E /* CardBackViewController.swift */; };
-		A42E1A492B12867E0061614E /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A482B12867E0061614E /* CardEntity.swift */; };
 		A42E1A4B2B128F710061614E /* QuestionListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A4A2B128F710061614E /* QuestionListEntity.swift */; };
 		A42E1A4D2B128F9B0061614E /* QuestionGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */; };
 		CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA62B12563A00135337 /* HistoryViewController.swift */; };
@@ -82,12 +79,10 @@
 
 /* Begin PBXFileReference section */
 		047F919A2B1256F9001EB577 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
-		047F91BF2B1286B1001EB577 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		047F91C02B128E85001EB577 /* postQuestionreply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postQuestionreply.swift; sourceTree = "<group>"; };
 		047F91C62B128F7E001EB577 /* postQuestionreplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postQuestionreplyModel.swift; sourceTree = "<group>"; };
 		047F91C82B129565001EB577 /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntity.swift; sourceTree = "<group>"; };
 		047F91CA2B12AA67001EB577 /* QuestionGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGetService.swift; sourceTree = "<group>"; };
-		047F91CC2B12AA8F001EB577 /* QuestionListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListEntity.swift; sourceTree = "<group>"; };
 		3CEDC2192B11F710004CBD6F /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEDC21C2B11F710004CBD6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEDC21E2B11F710004CBD6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +110,6 @@
 		3CEDC2642B127A6C004CBD6F /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		3CEDC2652B127A6C004CBD6F /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3CEDC2662B127A6C004CBD6F /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		3CEDC26A2B12824F004CBD6F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		3CEDC26D2B128F92004CBD6F /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		3CEFB17D2B12988400BCC479 /* OnboardingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntity.swift; sourceTree = "<group>"; };
 		3CEFB17F2B12993500BCC479 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
@@ -175,6 +169,7 @@
 			children = (
 				3CEDC21B2B11F710004CBD6F /* SOPKATHON-iOS */,
 				3CEDC21A2B11F710004CBD6F /* Products */,
+				3CEFB1812B12B96A00BCC479 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,6 +353,15 @@
 				3CEDC2662B127A6C004CBD6F /* Pretendard-SemiBold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3CEFB1812B12B96A00BCC479 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				047F91C82B129565001EB577 /* CardEntity.swift */,
+				047F91CA2B12AA67001EB577 /* QuestionGetService.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		A42E19FB2B12008C0061614E /* Base */ = {
@@ -645,6 +649,7 @@
 				3CEDC25C2B1267F8004CBD6F /* MainLaunchScreenView.swift in Sources */,
 				3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */,
 				3CEDC23D2B11F8B8004CBD6F /* ColorLiterals.swift in Sources */,
+				3CEFB1822B12BA1000BCC479 /* CardEntity.swift in Sources */,
 				A42E1A3E2B125D4C0061614E /* CardViewController.swift in Sources */,
 				A42E1A4D2B128F9B0061614E /* QuestionGetService.swift in Sources */,
 				A42E1A0F2B123D770061614E /* UIButton+.swift in Sources */,
@@ -652,7 +657,6 @@
 				3CEDC26E2B128F92004CBD6F /* UIViewController+.swift in Sources */,
 				A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */,
 				A42E1A402B1267340061614E /* CardBackView.swift in Sources */,
-				A42E1A492B12867E0061614E /* CardEntity.swift in Sources */,
 				A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */,
 				CA9DAAB32B12875700135337 /* SplashView.swift in Sources */,
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
@@ -675,7 +679,6 @@
 				CA9DAAB72B1292D200135337 /* GetHistoryEntity.swift in Sources */,
 				A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */,
 				A42E1A282B124CA20061614E /* CardFrontView.swift in Sources */,
-				047F91C92B129565001EB577 /* CardEntity.swift in Sources */,
 				A42E1A0A2B123D1C0061614E /* UIImage+.swift in Sources */,
 				3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */,
 				A42E1A2C2B124CB30061614E /* QuestionView.swift in Sources */,
@@ -690,7 +693,6 @@
 				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
 				3CEDC2502B1255F6004CBD6F /* OnboardingNicknameViewController.swift in Sources */,
 				047F91C72B128F7E001EB577 /* postQuestionreplyModel.swift in Sources */,
-				047F91CB2B12AA67001EB577 /* QuestionGetService.swift in Sources */,
 				3CEDC24B2B11F934004CBD6F /* ExampleView.swift in Sources */,
 				047F919B2B1256F9001EB577 /* QuestionViewController.swift in Sources */,
 			);
@@ -776,7 +778,6 @@
 		};
 		3CEDC22C2B11F711004CBD6F /* Release */ = {
 			isa = XCBuildConfiguration;
-
 			baseConfigurationReference = CA9DAAAE2B1286AE00135337 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;

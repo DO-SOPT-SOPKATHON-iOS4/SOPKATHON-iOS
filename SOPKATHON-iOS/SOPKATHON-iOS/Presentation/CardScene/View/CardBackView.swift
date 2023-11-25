@@ -119,7 +119,7 @@ extension CardBackView {
     }
     
     func setDataBind(model: CardEntity) {
-        imageView.kfSetImage(url: model.imgURL)
+        imageView.kfSetImage(url: model.imgURL1)
         backTitleLabel.text = model.title
         backContentLabel.text = model.content
     }

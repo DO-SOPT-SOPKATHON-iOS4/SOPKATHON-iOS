@@ -140,7 +140,7 @@ extension CardFrontView {
     }
     
     func setDataBind(model: CardEntity) {
-        imageView.kfSetImage(url: model.imgURL)
+        imageView.kfSetImage(url: model.imgURL1)
         detailLabel.text = model.nickname
         ageLabel.text = "\(model.resultAge)살"
     }
