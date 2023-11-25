@@ -63,3 +63,7 @@
 
 ## 👨‍👩‍👧‍👦 Our Team
 <img src = "https://github.com/DO-SOPT-SOPKATHON-iOS4/SOPKATHON-iOS/assets/79412889/dd12284e-5030-4ce7-abea-4d9d2b38f8b7" width = "300">
+<img src = "https://github.com/DO-SOPT-SOPKATHON-iOS4/SOPKATHON-iOS/assets/59056821/01456f09-6425-44d5-8fb0-c1c6aac4c8e9" width = "300">
+
+![사진 2023  11  26  오전 8 29](https://github.com/DO-SOPT-SOPKATHON-iOS4/SOPKATHON-iOS/assets/59056821/01456f09-6425-44d5-8fb0-c1c6aac4c8e9)
+
