@@ -1,26 +1,26 @@
 //
-//  ViewController.swift
+//  OnboardingAgeViewController.swift
 //  SOPKATHON-iOS
 //
-//  Created by 변상우 on 11/25/23.
+//  Created by 변상우 on 11/26/23.
 //
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class OnboardingAgeViewController: UIViewController {
 
     // MARK: - Properties
     
     // MARK: - UI Components
     
-    private let myView = ExampleView()
+    private let rootView = OnboardingAgeView()
     
     // MARK: - Life Cycles
     
     override func loadView() {
         super.loadView()
         
-        view = myView
+        view = rootView
     }
     
     override func viewDidLoad() {
@@ -34,8 +34,9 @@ final class ViewController: UIViewController {
     }
 }
 
+
 // MARK: - Extensions
-extension ViewController {
+extension OnboardingAgeViewController {
     private func setUI() {
         
     }
@@ -49,26 +50,20 @@ extension ViewController {
     }
     
     private func setDelegate() {
-        
+        rootView.buttonDelegate = self
     }
 }
 
 // MARK: - Network
 
-extension ViewController {
+extension OnboardingAgeViewController {
     private func getAPI() {
         
     }
 }
 
-//extension ViewController: UICollectionViewDelegate {
-//
-//}
-//
-//extension ViewController: UICollectionViewDataSource {
-//
-//}
-//
-//extension ViewController: UICollectionViewFlowLayout {
-//
-//}
+extension OnboardingAgeViewController: ButtonDelegate {
+    func nextButtonTapped() {
+        self.navigationController?.pushViewController(MainViewController(), animated: true)
+    }
+}
