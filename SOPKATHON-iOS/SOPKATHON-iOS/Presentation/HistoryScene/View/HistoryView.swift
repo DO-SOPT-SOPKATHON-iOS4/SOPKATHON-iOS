@@ -16,6 +16,7 @@ final class HistoryView: UIView {
         btn.backgroundColor = .systemGray2
         return btn
     }()
+    private lazy var historyCardView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         
 //    private let imageView: UIImageView = {
 //        let image = UIImageView()
@@ -42,6 +43,7 @@ final class HistoryView: UIView {
         setLayout()
         setAddTarget()
         setRegisterCell()
+        setCollectionViewLayout()
     }
     
     @available(*, unavailable)
@@ -53,14 +55,18 @@ final class HistoryView: UIView {
 // MARK: - Extensions
 extension HistoryView {
     func setUI() {
-        
+        historyCardView.backgroundColor = .black
     }
     
     func setHierarchy() {
+        self.addSubview(historyCardView)
     }
     
     func setLayout() {
-
+        historyCardView.snp.makeConstraints{
+            $0.top.equalTo(self.safeAreaLayoutGuide).inset(55)
+            $0.leading.bottom.trailing.equalToSuperview()
+        }
     }
     
     func setAddTarget() {
@@ -73,11 +79,42 @@ extension HistoryView {
     }
     
     func setRegisterCell() {
-        
+        HistoryCollectionViewCell.register(collectionView: historyCardView)
+        historyCardView.delegate = self
+        historyCardView.dataSource = self
     }
     
     func setDataBind() {
         
     }
+    
+    private func setCollectionViewLayout() {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .vertical
+        flowLayout.itemSize = CGSize(width: 316 * UIScreen.main.bounds.width / 375, height: 256 * UIScreen.main.bounds.width / 375)
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        
+        self.historyCardView.setCollectionViewLayout(flowLayout, animated: false)
+    }
+}
+
+extension HistoryView: UICollectionViewDelegate {}
+
+extension HistoryView: UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let historyCell = collectionView.dequeueReusableCell(withReuseIdentifier: HistoryCollectionViewCell.reuseIdentifier, for: indexPath) as? HistoryCollectionViewCell else {return UICollectionViewCell()}
+            historyCell.bindData()
+            return historyCell
+    }
+    
+    
 }
 

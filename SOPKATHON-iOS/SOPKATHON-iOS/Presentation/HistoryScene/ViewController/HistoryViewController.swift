@@ -41,6 +41,7 @@ class HistoryViewController: UIViewController {
         self.navigationItem.titleView = titleView
         self.navigationItem.leftBarButtonItem = mainBtn
         self.navigationItem.leftItemsSupplementBackButton = true
+        self.navigationController?.navigationBar.backgroundColor = .black
         setUI()
         setHierarchy()
         setLayout()
