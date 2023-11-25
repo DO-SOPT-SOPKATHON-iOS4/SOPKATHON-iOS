@@ -10,7 +10,10 @@ import UIKit
 extension UINavigationController {
 
     func navBackButton() {
-        let backButton = UIBarButtonItem(title: "CustomBack", style: .plain, target: self, action: #selector(backButtonPressed))
+        
+        let backButtonImage = ImageLiterals.ic_left_arrow
+        self.navigationBar.tintColor = .SOPTGrey600
+        let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(backButtonPressed))
         topViewController?.navigationItem.leftBarButtonItem = backButton
     }
 

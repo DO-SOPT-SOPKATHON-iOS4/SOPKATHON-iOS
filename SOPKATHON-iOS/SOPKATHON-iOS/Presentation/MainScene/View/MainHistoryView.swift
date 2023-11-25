@@ -16,20 +16,22 @@ class MainHistoryView: UIView {
     private let historyTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "그땐 몇 살이었지?"
-        label.textColor = .white
+        label.textColor = .SOPTWhite
+        label.font = .pretendardBold(size: 24)
         return label
     }()
     
     private let historySubTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "나이 히스토리를 확인해봐요"
-        label.textColor = .white
+        label.textColor = .SOPTWhite
+        label.font = .pretendardRegular(size: 16)
         return label
     }()
     
     private let historyImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "folder.fill")
+        imageView.image = ImageLiterals.go_to_history
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
