@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047F919B2B1256F9001EB577 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F919A2B1256F9001EB577 /* QuestionViewController.swift */; };
+		047F91BE2B125AEB001EB577 /* Shuffle in Frameworks */ = {isa = PBXBuildFile; productRef = 047F91BD2B125AEB001EB577 /* Shuffle */; };
 		3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC21C2B11F710004CBD6F /* AppDelegate.swift */; };
 		3CEDC21F2B11F710004CBD6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC21E2B11F710004CBD6F /* SceneDelegate.swift */; };
 		3CEDC2212B11F710004CBD6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC2202B11F710004CBD6F /* ViewController.swift */; };
@@ -52,7 +54,6 @@
 		A42E1A282B124CA20061614E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A272B124CA20061614E /* CardView.swift */; };
 		A42E1A2A2B124CAB0061614E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A292B124CAB0061614E /* CardViewController.swift */; };
 		A42E1A2C2B124CB30061614E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2B2B124CB30061614E /* QuestionView.swift */; };
-		A42E1A2E2B124CC00061614E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2D2B124CC00061614E /* QuestionViewController.swift */; };
 		A42E1A302B124CC90061614E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2F2B124CC90061614E /* MainView.swift */; };
 		A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */; };
 		CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA62B12563A00135337 /* HistoryViewController.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047F919A2B1256F9001EB577 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3CEDC2192B11F710004CBD6F /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEDC21C2B11F710004CBD6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEDC21E2B11F710004CBD6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +107,6 @@
 		A42E1A272B124CA20061614E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A42E1A292B124CAB0061614E /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		A42E1A2B2B124CB30061614E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		A42E1A2D2B124CC00061614E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A42E1A2F2B124CC90061614E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNicknameView.swift; sourceTree = "<group>"; };
 		CA9DAAA62B12563A00135337 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047F91BE2B125AEB001EB577 /* Shuffle in Frameworks */,
 				A42E1A0D2B123D430061614E /* Kingfisher in Frameworks */,
 				A42E19ED2B11FED30061614E /* SnapKit in Frameworks */,
 				A42E19F02B11FEEA0061614E /* Alamofire in Frameworks */,
@@ -387,7 +389,7 @@
 		A42E1A1F2B124C0E0061614E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A42E1A2D2B124CC00061614E /* QuestionViewController.swift */,
+				047F919A2B1256F9001EB577 /* QuestionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -483,6 +485,7 @@
 				A42E19EC2B11FED30061614E /* SnapKit */,
 				A42E19EF2B11FEEA0061614E /* Alamofire */,
 				A42E1A0C2B123D430061614E /* Kingfisher */,
+				047F91BD2B125AEB001EB577 /* Shuffle */,
 			);
 			productName = "SOPKATHON-iOS";
 			productReference = 3CEDC2192B11F710004CBD6F /* SOPKATHON-iOS.app */;
@@ -516,6 +519,7 @@
 				A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A42E19EE2B11FEEA0061614E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				A42E1A0B2B123D430061614E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				047F91BC2B125AEB001EB577 /* XCRemoteSwiftPackageReference "Shuffle" */,
 			);
 			productRefGroup = 3CEDC21A2B11F710004CBD6F /* Products */;
 			projectDirPath = "";
@@ -585,10 +589,10 @@
 				CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */,
 				A42E1A082B1201070061614E /* Config.swift in Sources */,
 				CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */,
-				A42E1A2E2B124CC00061614E /* QuestionViewController.swift in Sources */,
 				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
 				3CEDC2502B1255F6004CBD6F /* OnboardingNicknameViewController.swift in Sources */,
 				3CEDC24B2B11F934004CBD6F /* ExampleView.swift in Sources */,
+				047F919B2B1256F9001EB577 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +807,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		047F91BC2B125AEB001EB577 /* XCRemoteSwiftPackageReference "Shuffle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-gallagher/Shuffle";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -830,6 +842,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		047F91BD2B125AEB001EB577 /* Shuffle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 047F91BC2B125AEB001EB577 /* XCRemoteSwiftPackageReference "Shuffle" */;
+			productName = Shuffle;
+		};
 		A42E19EC2B11FED30061614E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */;
