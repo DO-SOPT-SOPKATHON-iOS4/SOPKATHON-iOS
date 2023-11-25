@@ -9,7 +9,7 @@ final class HistoryView: UIView {
     
     // MARK: - UI Components
     
-    private lazy var historyCardView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    var historyCardView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
     
     // MARK: - Life Cycles
     
@@ -58,8 +58,6 @@ extension HistoryView {
     
     func setRegisterCell() {
         HistoryCollectionViewCell.register(collectionView: historyCardView)
-        historyCardView.delegate = self
-        historyCardView.dataSource = self
     }
     
     func setDataBind() {
@@ -76,23 +74,23 @@ extension HistoryView {
     }
 }
 
-extension HistoryView: UICollectionViewDelegate {}
-
-extension HistoryView: UICollectionViewDataSource{
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let historyCell = collectionView.dequeueReusableCell(withReuseIdentifier: HistoryCollectionViewCell.reuseIdentifier, for: indexPath) as? HistoryCollectionViewCell else {return UICollectionViewCell()}
-            historyCell.bindData()
-            return historyCell
-    }
-    
-    
-}
-
+//extension HistoryView: UICollectionViewDelegate {}
+//
+//extension HistoryView: UICollectionViewDataSource{
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 10
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 1
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let historyCell = collectionView.dequeueReusableCell(withReuseIdentifier: HistoryCollectionViewCell.reuseIdentifier, for: indexPath) as? HistoryCollectionViewCell else {return UICollectionViewCell()}
+//            historyCell.bindData()
+//            return historyCell
+//    }
+//    
+//    
+//}
+//

@@ -62,9 +62,17 @@
 		A42E1A402B1267340061614E /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A3F2B1267340061614E /* CardBackView.swift */; };
 		A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A432B127E3F0061614E /* CardFrontViewController.swift */; };
 		A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A452B127E7C0061614E /* CardBackViewController.swift */; };
+		A42E1A492B12867E0061614E /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A482B12867E0061614E /* CardEntity.swift */; };
+		A42E1A4B2B128F710061614E /* QuestionListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A4A2B128F710061614E /* QuestionListEntity.swift */; };
+		A42E1A4D2B128F9B0061614E /* QuestionGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */; };
 		CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA62B12563A00135337 /* HistoryViewController.swift */; };
 		CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */; };
 		CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */; };
+		CA9DAAB32B12875700135337 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB22B12875700135337 /* SplashView.swift */; };
+		CA9DAAB52B12876700135337 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB42B12876700135337 /* SplashViewController.swift */; };
+		CA9DAAB72B1292D200135337 /* GetHistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */; };
+		CA9DAAB92B12938300135337 /* GetHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB82B12938300135337 /* GetHistoryService.swift */; };
+		CA9DAABB2B129D2900135337 /* GetHistoryDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAABA2B129D2900135337 /* GetHistoryDataProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,9 +130,18 @@
 		A42E1A3F2B1267340061614E /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 		A42E1A432B127E3F0061614E /* CardFrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontViewController.swift; sourceTree = "<group>"; };
 		A42E1A452B127E7C0061614E /* CardBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackViewController.swift; sourceTree = "<group>"; };
+		A42E1A482B12867E0061614E /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntity.swift; sourceTree = "<group>"; };
+		A42E1A4A2B128F710061614E /* QuestionListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListEntity.swift; sourceTree = "<group>"; };
+		A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGetService.swift; sourceTree = "<group>"; };
 		CA9DAAA62B12563A00135337 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
+		CA9DAAAE2B1286AE00135337 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		CA9DAAB22B12875700135337 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CA9DAAB42B12876700135337 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryEntity.swift; sourceTree = "<group>"; };
+		CA9DAAB82B12938300135337 /* GetHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryService.swift; sourceTree = "<group>"; };
+		CA9DAABA2B129D2900135337 /* GetHistoryDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryDataProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +183,7 @@
 				3CEDC2322B11F7BB004CBD6F /* Network */,
 				3CEDC2312B11F7AA004CBD6F /* Presentation */,
 				3CEDC22A2B11F711004CBD6F /* Info.plist */,
-				3CEDC26A2B12824F004CBD6F /* Config.xcconfig */,
+				CA9DAAAE2B1286AE00135337 /* Config.xcconfig */,
 			);
 			path = "SOPKATHON-iOS";
 			sourceTree = "<group>";
@@ -174,6 +191,7 @@
 		3CEDC2312B11F7AA004CBD6F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CA9DAAAF2B12872600135337 /* SplashScene */,
 				A42E1A242B124C2C0061614E /* OnboardingScene */,
 				A42E1A212B124C170061614E /* MainScene */,
 				A42E1A1E2B124C020061614E /* QuestionScene */,
@@ -229,6 +247,7 @@
 			children = (
 				3CEDC2402B11F8EA004CBD6F /* UITableViewRegisterable.swift */,
 				A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */,
+				CA9DAABA2B129D2900135337 /* GetHistoryDataProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -274,6 +293,9 @@
 			children = (
 				3CEDC2442B11F90C004CBD6F /* ExampleEntity.swift */,
 				3CEFB17D2B12988400BCC479 /* OnboardingEntity.swift */,
+				A42E1A482B12867E0061614E /* CardEntity.swift */,
+				A42E1A4A2B128F710061614E /* QuestionListEntity.swift */,
+				CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -283,6 +305,8 @@
 			children = (
 				3CEDC2462B11F916004CBD6F /* ExampleService.swift */,
 				3CEFB17F2B12993500BCC479 /* OnboardingService.swift */,
+				A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */,
+				CA9DAAB82B12938300135337 /* GetHistoryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -485,6 +509,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		CA9DAAAF2B12872600135337 /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DAAB12B12874100135337 /* View */,
+				CA9DAAB02B12873900135337 /* ViewController */,
+			);
+			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		CA9DAAB02B12873900135337 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DAAB42B12876700135337 /* SplashViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CA9DAAB12B12874100135337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DAAB22B12875700135337 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -584,15 +633,19 @@
 				3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */,
 				3CEDC23D2B11F8B8004CBD6F /* ColorLiterals.swift in Sources */,
 				A42E1A3E2B125D4C0061614E /* CardViewController.swift in Sources */,
+				A42E1A4D2B128F9B0061614E /* QuestionGetService.swift in Sources */,
 				A42E1A0F2B123D770061614E /* UIButton+.swift in Sources */,
 				3CEDC2582B1261FA004CBD6F /* UINavigationController+.swift in Sources */,
 				3CEDC26E2B128F92004CBD6F /* UIViewController+.swift in Sources */,
 				A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */,
 				A42E1A402B1267340061614E /* CardBackView.swift in Sources */,
+				A42E1A492B12867E0061614E /* CardEntity.swift in Sources */,
 				A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */,
+				CA9DAAB32B12875700135337 /* SplashView.swift in Sources */,
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
 				A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */,
 				A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */,
+				CA9DAABB2B129D2900135337 /* GetHistoryDataProtocol.swift in Sources */,
 				A42E1A302B124CC90061614E /* MainView.swift in Sources */,
 				CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */,
 				A42E1A112B123EE60061614E /* UILabel+.swift in Sources */,
@@ -605,15 +658,19 @@
 				3CEDC2542B125F7D004CBD6F /* OnboardingAgeViewController.swift in Sources */,
 				A42E19FA2B1200300061614E /* NSObject+.swift in Sources */,
 				3CEDC2522B125F0F004CBD6F /* UITextField+.swift in Sources */,
+				CA9DAAB72B1292D200135337 /* GetHistoryEntity.swift in Sources */,
 				A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */,
 				A42E1A282B124CA20061614E /* CardFrontView.swift in Sources */,
 				A42E1A0A2B123D1C0061614E /* UIImage+.swift in Sources */,
 				3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */,
 				A42E1A2C2B124CB30061614E /* QuestionView.swift in Sources */,
+				CA9DAAB92B12938300135337 /* GetHistoryService.swift in Sources */,
 				3CEDC2602B126AF1004CBD6F /* MainHistoryView.swift in Sources */,
 				CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */,
+				A42E1A4B2B128F710061614E /* QuestionListEntity.swift in Sources */,
 				A42E1A082B1201070061614E /* Config.swift in Sources */,
 				A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */,
+				CA9DAAB52B12876700135337 /* SplashViewController.swift in Sources */,
 				CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */,
 				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
 				3CEDC2502B1255F6004CBD6F /* OnboardingNicknameViewController.swift in Sources */,
@@ -638,7 +695,7 @@
 /* Begin XCBuildConfiguration section */
 		3CEDC22B2B11F711004CBD6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEDC26A2B12824F004CBD6F /* Config.xcconfig */;
+			baseConfigurationReference = CA9DAAAE2B1286AE00135337 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -702,7 +759,7 @@
 		};
 		3CEDC22C2B11F711004CBD6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEDC26A2B12824F004CBD6F /* Config.xcconfig */;
+			baseConfigurationReference = CA9DAAAE2B1286AE00135337 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
