@@ -62,7 +62,7 @@ extension MainViewController {
 
 extension MainViewController: MainButtonDelegate {
     func startQuestionButtonTapped() {
-        self.navigationController?.pushViewController(QuestionViewController(), animated: true)
+//        self.navigationController?.pushViewController(QuestionViewController(), animated: true)
     }
     
     func historyButtonTapped() {

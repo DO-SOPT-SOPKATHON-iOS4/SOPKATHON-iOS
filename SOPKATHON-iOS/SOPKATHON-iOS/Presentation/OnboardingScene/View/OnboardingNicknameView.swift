@@ -24,6 +24,7 @@ final class OnboardingNicknameView: UIView {
         let label = UILabel()
         label.text = "닉네임이 뭐야?"
         label.textColor = .white
+        label.font = .pretendardBold(size: 28)
         return label
     }()
     
@@ -40,7 +41,7 @@ final class OnboardingNicknameView: UIView {
         let button = UIButton()
         button.setTitle("다음", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .green
+        button.backgroundColor = .SOPTGreen
         button.layer.cornerRadius = 16
         return button
     }()

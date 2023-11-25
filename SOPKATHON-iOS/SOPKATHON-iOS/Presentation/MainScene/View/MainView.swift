@@ -27,6 +27,7 @@ final class MainView: UIView {
         let label = UILabel()
         label.text = "동훈,\n너 몇살이야?"
         label.textColor = .white
+        label.font = .chab(size: 32)
         label.numberOfLines = 2
         return label
     }()
