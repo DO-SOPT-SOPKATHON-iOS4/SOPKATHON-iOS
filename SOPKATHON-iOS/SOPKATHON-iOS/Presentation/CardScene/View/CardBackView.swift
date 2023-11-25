@@ -15,20 +15,20 @@ final class CardBackView: UIView {
     
     let backView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .SOPTYellow
         return view
     }()
     
     private let imageView: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "apple.logo")
         return image
     }()
 
     private let backTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "어리숙한 귀요미"
-        label.textColor = .black
+        label.textColor = .SOPTBlack
+        label.font = .pretendardBold(size: 32)
         label.textAlignment = .center
         return label
     }()
@@ -44,7 +44,16 @@ final class CardBackView: UIView {
         label.text = "어리숙한 귀요미\n\ndjdj"
         label.textColor = .black
         label.numberOfLines = 0
+        label.font = .pretendardRegular(size: 18)
         label.textAlignment = .center
+        return label
+    }()
+    
+    private let touchLabel: UILabel = {
+        let label = UILabel()
+        label.text = "카드를 터치해주세요!"
+        label.textColor = .SOPTGrey400
+        label.font = .pretendardBold(size: 20)
         return label
     }()
     
@@ -64,28 +73,28 @@ final class CardBackView: UIView {
 
 extension CardBackView {
     func setUI() {
-        backgroundColor = .red
+        backView.layer.cornerRadius = 50
+        backgroundColor = .SOPTBlack
     }
     
     func setHierarchy() {
         backView.addSubviews(imageView, backTitleLabel, seperatorView, backContentLabel)
-        addSubview(backView)
+        addSubviews(backView, touchLabel)
     }
     
     func setLayout() {
         backView.snp.makeConstraints {
-//            $0.top.equalTo(safeAreaLayoutGuide).offset(31)
-//            $0.centerX.equalToSuperview()
-//            $0.width.equalTo(305)
-//            $0.height.equalTo(441)
-            $0.edges.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide).offset(31)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(305)
+            $0.height.equalTo(441)
         }
         
         imageView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(83)
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(54)
-            $0.height.equalTo(36)
+            $0.width.equalTo(36)
+            $0.height.equalTo(54)
         }
         
         backTitleLabel.snp.makeConstraints {
@@ -102,5 +111,51 @@ extension CardBackView {
             $0.top.equalTo(seperatorView.snp.bottom).offset(29)
             $0.leading.trailing.equalToSuperview().inset(39)
         }
+        
+        touchLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(130)
+        }
+    }
+    
+    func setDataBind(model: CardEntity) {
+        imageView.kfSetImage(url: model.imgURL)
+        backTitleLabel.text = model.title
+        backContentLabel.text = model.content
+    }
+    
+    func setHistoryBind(title: String, content: String) {
+        switch title {
+        case "어리숙한 귀요미":
+            self.imageView.image = ImageLiterals.history_level1
+            self.backView.backgroundColor = .SOPTYellow
+            self.imageView.snp.updateConstraints {
+                $0.width.equalTo(54)
+                $0.height.equalTo(36)
+            }
+        case "말랑한 깜찍이":
+            self.imageView.image = ImageLiterals.history_level2
+            self.backView.backgroundColor = .SOPTOrange
+            self.imageView.snp.updateConstraints {
+                $0.width.equalTo(54)
+                $0.height.equalTo(36)
+            }
+        case "성장중인 새싹이":
+            self.imageView.image = ImageLiterals.history_level3
+            self.backView.backgroundColor = .SOPTBlue
+            self.imageView.snp.updateConstraints {
+                $0.width.equalTo(54)
+                $0.height.equalTo(36)
+            }
+        case "성숙한 멋쟁이":
+            self.imageView.image = ImageLiterals.history_level4
+            self.backView.backgroundColor = .SOPTGreen
+        case "진정한 어른이":
+            self.backView.backgroundColor = .SOPTRed
+            self.imageView.image = ImageLiterals.history_level5
+        default: break
+        }
+        backTitleLabel.text = title
+        backContentLabel.text = content
     }
 }

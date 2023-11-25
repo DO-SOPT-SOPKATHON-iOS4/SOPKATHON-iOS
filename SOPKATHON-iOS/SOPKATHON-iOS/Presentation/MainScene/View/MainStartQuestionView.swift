@@ -16,20 +16,22 @@ class MainStartQuestionView: UIView {
     private let startTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "나 몇 살이지?"
-        label.textColor = .white
+        label.textColor = .SOPTWhite
+        label.font = .pretendardBold(size: 24)
         return label
     }()
     
     private let startSubTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "지금 내 나이를 확인해봐요"
-        label.textColor = .white
+        label.textColor = .SOPTWhite
+        label.font = .pretendardRegular(size: 16)
         return label
     }()
     
     private let startImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "folder.fill")
+        imageView.image = ImageLiterals.go_to_question
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()

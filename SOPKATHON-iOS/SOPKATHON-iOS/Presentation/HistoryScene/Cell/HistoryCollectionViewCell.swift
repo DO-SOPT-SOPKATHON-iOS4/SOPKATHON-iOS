@@ -18,6 +18,7 @@ class HistoryCollectionViewCell: UICollectionViewCell, UICollectionViewRegistera
         let view = UIImageView()
         view.image = ImageLiterals.history_level1
         view.backgroundColor = .clear
+        view.contentMode = .scaleAspectFit
         return view
     }()
     private lazy var divider: UIView = {
@@ -29,6 +30,7 @@ class HistoryCollectionViewCell: UICollectionViewCell, UICollectionViewRegistera
         let label = UILabel()
         label.textColor = .SOPTBlack
         label.font = .pretendardRegular(size: 16)
+        label.numberOfLines = 0
         return label
     }()
     private lazy var dateLabel: UILabel = {
@@ -91,9 +93,33 @@ extension HistoryCollectionViewCell {
         }
     }
     
-    func bindData() {
-        self.titleLabel.text = "성장중인 새싹이"
-        self.contentLabel.text = "매일 매일 자라고 있는 당신! \n다음 달엔 얼마나 발전했을지 궁금한 걸?"
-        self.dateLabel.text = "23.12.31"
+    func bindData(data: GetHistoryData) {
+        self.titleLabel.text = data.title
+        self.contentLabel.text = data.content
+        self.dateLabel.text = data.testedDate
+        setColor(title: data.title)
+        setImage(title: data.title)
+    }
+    
+    func setColor(title: String) {
+        switch title {
+        case "어리숙한 귀요미": self.contentView.backgroundColor = .SOPTYellow
+        case "말랑한 깜찍이": self.contentView.backgroundColor = .SOPTOrange
+        case "성장중인 새싹이": self.contentView.backgroundColor = .SOPTBlue
+        case "성숙한 멋쟁이": self.contentView.backgroundColor = .SOPTGreen
+        case "진정한 어른이": self.contentView.backgroundColor = .SOPTRed
+        default: break
+        }
+    }
+    
+    func setImage(title: String) {
+        switch title {
+        case "어리숙한 귀요미": self.image.image = ImageLiterals.history_level1
+        case "말랑한 깜찍이": self.image.image = ImageLiterals.history_level2
+        case "성장중인 새싹이": self.image.image = ImageLiterals.history_level3
+        case "성숙한 멋쟁이": self.image.image = ImageLiterals.history_level4
+        case "진정한 어른이": self.image.image = ImageLiterals.history_level5
+        default: break
+        }
     }
 }

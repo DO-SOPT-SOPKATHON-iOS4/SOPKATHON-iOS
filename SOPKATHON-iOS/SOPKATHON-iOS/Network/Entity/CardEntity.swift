@@ -3,6 +3,7 @@
 //  SOPKATHON-iOS
 //
 //  Created by Woo Jye Lee on 11/26/23.
+
 //
 
 struct CardEntity: Codable {

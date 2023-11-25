@@ -37,7 +37,7 @@ extension UIColor {
     }
     
     static var SOPTOrange: UIColor {
-        return UIColor(hex: "#434343")
+        return UIColor(hex: "#FF8339")
     }
     
     static var SOPTBlue: UIColor {
