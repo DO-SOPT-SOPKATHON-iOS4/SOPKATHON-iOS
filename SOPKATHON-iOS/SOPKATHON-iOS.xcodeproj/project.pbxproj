@@ -31,6 +31,10 @@
 		A42E1A042B1200E10061614E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A032B1200E10061614E /* BaseService.swift */; };
 		A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A052B1200FA0061614E /* URLConstant.swift */; };
 		A42E1A082B1201070061614E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A072B1201070061614E /* Config.swift */; };
+		A42E1A0A2B123D1C0061614E /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A092B123D1C0061614E /* UIImage+.swift */; };
+		A42E1A0D2B123D430061614E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A42E1A0C2B123D430061614E /* Kingfisher */; };
+		A42E1A0F2B123D770061614E /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A0E2B123D770061614E /* UIButton+.swift */; };
+		A42E1A112B123EE60061614E /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A102B123EE60061614E /* UILabel+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,9 @@
 		A42E1A032B1200E10061614E /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A42E1A052B1200FA0061614E /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		A42E1A072B1201070061614E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A42E1A092B123D1C0061614E /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		A42E1A0E2B123D770061614E /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		A42E1A102B123EE60061614E /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42E1A0D2B123D430061614E /* Kingfisher in Frameworks */,
 				A42E19ED2B11FED30061614E /* SnapKit in Frameworks */,
 				A42E19F02B11FEEA0061614E /* Alamofire in Frameworks */,
 			);
@@ -165,6 +173,9 @@
 				A42E19F52B11FFF70061614E /* UIStackView+.swift */,
 				A42E19F72B1200130061614E /* UIColor+.swift */,
 				A42E19F92B1200300061614E /* NSObject+.swift */,
+				A42E1A092B123D1C0061614E /* UIImage+.swift */,
+				A42E1A0E2B123D770061614E /* UIButton+.swift */,
+				A42E1A102B123EE60061614E /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -266,6 +277,7 @@
 			packageProductDependencies = (
 				A42E19EC2B11FED30061614E /* SnapKit */,
 				A42E19EF2B11FEEA0061614E /* Alamofire */,
+				A42E1A0C2B123D430061614E /* Kingfisher */,
 			);
 			productName = "SOPKATHON-iOS";
 			productReference = 3CEDC2192B11F710004CBD6F /* SOPKATHON-iOS.app */;
@@ -298,6 +310,7 @@
 			packageReferences = (
 				A42E19EB2B11FED30061614E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A42E19EE2B11FEEA0061614E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A42E1A0B2B123D430061614E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3CEDC21A2B11F710004CBD6F /* Products */;
 			projectDirPath = "";
@@ -332,15 +345,18 @@
 				3CEDC2212B11F710004CBD6F /* ViewController.swift in Sources */,
 				3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */,
 				3CEDC23D2B11F8B8004CBD6F /* ColorLiterals.swift in Sources */,
+				A42E1A0F2B123D770061614E /* UIButton+.swift in Sources */,
 				A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */,
 				A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */,
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
+				A42E1A112B123EE60061614E /* UILabel+.swift in Sources */,
 				A42E19F62B11FFF70061614E /* UIStackView+.swift in Sources */,
 				3CEDC21F2B11F710004CBD6F /* SceneDelegate.swift in Sources */,
 				A42E19F82B1200130061614E /* UIColor+.swift in Sources */,
 				3CEDC2412B11F8EA004CBD6F /* UITableViewRegisterable.swift in Sources */,
 				A42E19FA2B1200300061614E /* NSObject+.swift in Sources */,
 				A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */,
+				A42E1A0A2B123D1C0061614E /* UIImage+.swift in Sources */,
 				3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */,
 				A42E1A082B1201070061614E /* Config.swift in Sources */,
 				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
@@ -575,6 +591,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		A42E1A0B2B123D430061614E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -587,6 +611,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A42E19EE2B11FEEA0061614E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		A42E1A0C2B123D430061614E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A42E1A0B2B123D430061614E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
