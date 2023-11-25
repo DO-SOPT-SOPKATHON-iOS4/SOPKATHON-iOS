@@ -12,17 +12,10 @@ enum URLConstant {
     // MARK: - Base URL
     
     static let baseURL = Config.baseURL
+
+    static let questionURL = baseURL + "/question"
     
-    // MARK: - WaitingDetail
+    static let memberURL = baseURL + "/member"
     
-    
-    // MARK: - StoreDetail
-    
-    
-    // MARK: - StoreList
-    
-    
-    // MARK: - TablingList
-    
-    static let tablingURL = baseURL + "/orders"
+    static let resultURL = baseURL + "/result"
 }
