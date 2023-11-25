@@ -64,6 +64,9 @@
 		CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */; };
 		CA9DAAB32B12875700135337 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB22B12875700135337 /* SplashView.swift */; };
 		CA9DAAB52B12876700135337 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB42B12876700135337 /* SplashViewController.swift */; };
+		CA9DAAB72B1292D200135337 /* GetHistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */; };
+		CA9DAAB92B12938300135337 /* GetHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB82B12938300135337 /* GetHistoryService.swift */; };
+		CA9DAABB2B129D2900135337 /* GetHistoryDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAABA2B129D2900135337 /* GetHistoryDataProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +126,9 @@
 		CA9DAAAE2B1286AE00135337 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		CA9DAAB22B12875700135337 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		CA9DAAB42B12876700135337 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryEntity.swift; sourceTree = "<group>"; };
+		CA9DAAB82B12938300135337 /* GetHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryService.swift; sourceTree = "<group>"; };
+		CA9DAABA2B129D2900135337 /* GetHistoryDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryDataProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 			children = (
 				3CEDC2402B11F8EA004CBD6F /* UITableViewRegisterable.swift */,
 				A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */,
+				CA9DAABA2B129D2900135337 /* GetHistoryDataProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2442B11F90C004CBD6F /* ExampleEntity.swift */,
+				CA9DAAB62B1292D200135337 /* GetHistoryEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2462B11F916004CBD6F /* ExampleService.swift */,
+				CA9DAAB82B12938300135337 /* GetHistoryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -613,6 +622,7 @@
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
 				A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */,
 				A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */,
+				CA9DAABB2B129D2900135337 /* GetHistoryDataProtocol.swift in Sources */,
 				A42E1A302B124CC90061614E /* MainView.swift in Sources */,
 				CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */,
 				A42E1A112B123EE60061614E /* UILabel+.swift in Sources */,
@@ -624,11 +634,13 @@
 				3CEDC2542B125F7D004CBD6F /* OnboardingAgeViewController.swift in Sources */,
 				A42E19FA2B1200300061614E /* NSObject+.swift in Sources */,
 				3CEDC2522B125F0F004CBD6F /* UITextField+.swift in Sources */,
+				CA9DAAB72B1292D200135337 /* GetHistoryEntity.swift in Sources */,
 				A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */,
 				A42E1A282B124CA20061614E /* CardFrontView.swift in Sources */,
 				A42E1A0A2B123D1C0061614E /* UIImage+.swift in Sources */,
 				3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */,
 				A42E1A2C2B124CB30061614E /* QuestionView.swift in Sources */,
+				CA9DAAB92B12938300135337 /* GetHistoryService.swift in Sources */,
 				3CEDC2602B126AF1004CBD6F /* MainHistoryView.swift in Sources */,
 				CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */,
 				A42E1A082B1201070061614E /* Config.swift in Sources */,
