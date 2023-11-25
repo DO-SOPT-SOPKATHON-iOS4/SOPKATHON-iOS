@@ -10,27 +10,36 @@ import SnapKit
 import Shuffle
 
 class QuestionViewController: UIViewController {
-
+    
+    // 답변 받을 배열 선언
+    var replyArray: [Result] = []
+    
+    var index = 1
+    var number = 0
+    
+    var nickName: String = "아라"
+    
+    private var questionListEntity: [QuestionListEntity] = []
+    
     let cardStack = SwipeCardStack()
       
-    let cardImages = [
-        "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"
-    ]
+    var cardImages: [String] = ["약국에서 텐텐 사 먹어 본 적 있어?", "너 첫 차는 타 봤니?", "평소 가방에 샤프 챙겨 다녀?", "구슬 아이스크림 내돈내산 해봤어?", "술 먹고 택시에서 토해봤어?", "부모님께 용돈 드려봤어?", "카페인을 보충하면 살아나?", "아침에 일어나는게 힘들어?", "해장 술 해봤어?", "놀이공원에 놀러갈 때 교복 입고 갈 거야?"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         cardStack.dataSource = self
         self.view.backgroundColor = .black
         self.setLayout()
+//        getQuestionListAPI()
     }
     // MARK: - setLayout()
     private func setLayout() {
         view.addSubview(cardStack)
         cardStack.translatesAutoresizingMaskIntoConstraints = false
         // cardStack.frame = view.safeAreaLayoutGuide.layoutFrame
-        NSLayoutConstraint.activate([cardStack.heightAnchor.constraint(equalToConstant: 310),
-                                     cardStack.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
-                                     cardStack.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+        NSLayoutConstraint.activate([cardStack.heightAnchor.constraint(equalToConstant: 318),
+                                     cardStack.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 15),
+                                     cardStack.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -15),
                                      cardStack.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
                                      cardStack.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 198)
         ])
@@ -69,42 +78,41 @@ class QuestionViewController: UIViewController {
     
     lazy var button: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .blue
         button.layer.cornerRadius = 40
         button.tintColor = .white
-        button.setImage(UIImage(systemName: "circle"), for: .normal)
-        
-        button.imageView!.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(40)
-        }
-        
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.setImage(UIImage(named: "QA_OX_btn_O"), for: .normal)
+        button.addTarget(self, action: #selector(buttonTapped1), for: .touchUpInside)
         button.addTarget(self, action: #selector(incrementProgressBar), for: .touchUpInside)
         return button
     }()
-    @objc func buttonTapped() {
-        cardStack.swipe(.left, animated: true)
-    }
+
     lazy var button1: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .red
-        button.setImage(UIImage(systemName: "xmark"), for: .normal)
-        button.imageView!.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(40)
-        }
+        button.setImage(UIImage(named: "QA_OX_btn_X"), for: .normal)
         button.tintColor = .white
         button.layer.cornerRadius = 40
         button.addTarget(self, action: #selector(buttonTapped1), for: .touchUpInside)
         button.addTarget(self, action: #selector(incrementProgressBar), for: .touchUpInside)
         return button
     }()
-    @objc func buttonTapped1() {
+    @objc func buttonTapped1(_ sender: UIButton) {
+        switch sender {
+        case button:
+            replyArray.append(Result(questionId: index, answerType: true))
+        case button1:
+            replyArray.append(Result(questionId: index, answerType: false))
+        default:
+            break
+        }
+        print(replyArray)
+        index+=1
+
         cardStack.swipe(.left, animated: true)
     }
     lazy var backButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
-        button.tintColor = .white
+        button.tintColor = .SOPTGrey600
         button.addTarget(self, action: #selector(backbuttonTapped), for: .touchUpInside)
         button.addTarget(self, action: #selector(decrementProgressBar), for: .touchUpInside)
         return button
@@ -115,23 +123,30 @@ class QuestionViewController: UIViewController {
     //MARK: - progressView
     lazy var progressView: UIProgressView = {
         let view = UIProgressView()
-        view.trackTintColor = .lightGray
-        view.progressTintColor = .green
+        view.trackTintColor = .SOPTGrey600
+        view.progressTintColor = .SOPTGreen
         view.progress = 0.0
         return view
     }()
     // MARK: - incrementProgressBar()
     @objc func incrementProgressBar() {
         
-//        UIView.animate(withDuration: 10) {
-//            let incrementAmount: Float = 0.1
-//            self.progressView.progress += incrementAmount
-//            self.progressView.setProgress(self.progressView.progress, animated: true)
-//        }
-        
         let incrementAmount: Float = 0.1
         progressView.progress += incrementAmount
-
+        
+        if progressView.progress == 1.0 {
+            postQuestionreply.shared.postInviteAPI(nickname: nickName, result: replyArray, completion: { networkResult in
+//                switch networkResult {
+//                case .success(let data):
+//                    
+//                default:
+//                    
+//                }
+             
+                self.navigationController?.pushViewController(CardFrontViewController(), animated: true)
+            })
+        }
+        
         if progressView.progress > 1.0 {
             progressView.progress = 1.0
         }
@@ -141,7 +156,7 @@ class QuestionViewController: UIViewController {
     @objc func decrementProgressBar() {
         let incrementAmount: Float = 0.1
         progressView.progress -= incrementAmount
-
+        
         if progressView.progress > 1.0 {
             progressView.progress = 1.0
         }
@@ -154,19 +169,34 @@ class QuestionViewController: UIViewController {
       let card = SwipeCard()
         card.swipeDirections = [.left, .right]
         card.layer.cornerRadius = 60
-        card.backgroundColor = .gray
+        card.backgroundColor = .SOPTGrey800
+        // 질문 번호 라벨
         let label = UILabel()
-        label.text = image
+        label.text = "Q: \(index)"
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = .white
         card.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .pretendardBold(size: 28)
         label.snp.makeConstraints() {
             $0.centerX.equalTo(card)
             $0.centerY.equalTo(card)
         }
-        
+        /// 질문 내용 라벨
+        let label2 = UILabel()
+        label2.text = image
+        label2.textAlignment = .center
+        label2.numberOfLines = 0
+        label2.textColor = .white
+        card.addSubview(label2)
+        label2.translatesAutoresizingMaskIntoConstraints = false
+        label2.snp.makeConstraints() {
+            $0.centerX.equalTo(card)
+            $0.bottom.equalTo(label.snp.top).inset(70)
+            $0.trailing.leading.equalTo(card).inset(20)
+        }
+        ///
         let card1 = SwipeCard()
           card1.swipeDirections = [.left, .right]
           card1.layer.cornerRadius = 60
@@ -182,9 +212,10 @@ class QuestionViewController: UIViewController {
               $0.centerX.equalTo(card1)
               $0.centerY.equalTo(card1)
           }
+        
       
       let leftOverlay = card1
-            leftOverlay.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+            leftOverlay.backgroundColor = UIColor.black.withAlphaComponent(0.6)
             leftOverlay.layer.cornerRadius = 40
       
       let rightOverlay = UIView()
@@ -213,3 +244,31 @@ extension QuestionViewController: SwipeCardStackDelegate {
         cardStack.undoLastSwipe(animated: true)
     }
 }
+
+//extension QuestionViewController {
+//    func getQuestionListAPI() {
+//        QuestionGetService.shared.getQueestionListAPI { networkResult in
+//            print(networkResult)
+//            switch networkResult {
+//            case .success(let data):
+//                if let data = data as? GenericResponse<[QuestionListEntity]> {
+//                    dump(data)
+//                    if let listData = data.data {
+//                        self.questionListEntity = listData
+//                    }
+//                    DispatchQueue.main.async { [self] in
+//                        for i in 0..<self.questionListEntity.count {
+//                            cardImages.append(questionListEntity[i].questionContent)
+//                            print(cardImages)
+////                            print(questionListEntity[i].questionContent)
+//                        }
+//                    }
+//                }
+//            case .requestErr, .serverErr:
+//                print("오류발생")
+//            default:
+//                break
+//            }
+//        }
+//    }
+//}

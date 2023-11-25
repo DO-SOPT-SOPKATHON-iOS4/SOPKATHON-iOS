@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		047F919B2B1256F9001EB577 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F919A2B1256F9001EB577 /* QuestionViewController.swift */; };
 		047F91BE2B125AEB001EB577 /* Shuffle in Frameworks */ = {isa = PBXBuildFile; productRef = 047F91BD2B125AEB001EB577 /* Shuffle */; };
+		047F91C12B128E85001EB577 /* postQuestionreply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91C02B128E85001EB577 /* postQuestionreply.swift */; };
+		047F91C72B128F7E001EB577 /* postQuestionreplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91C62B128F7E001EB577 /* postQuestionreplyModel.swift */; };
+		047F91C92B129565001EB577 /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91C82B129565001EB577 /* CardEntity.swift */; };
+		047F91CB2B12AA67001EB577 /* QuestionGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91CA2B12AA67001EB577 /* QuestionGetService.swift */; };
+		047F91CD2B12AA8F001EB577 /* QuestionListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F91CC2B12AA8F001EB577 /* QuestionListEntity.swift */; };
 		3CEDC21D2B11F710004CBD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC21C2B11F710004CBD6F /* AppDelegate.swift */; };
 		3CEDC21F2B11F710004CBD6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC21E2B11F710004CBD6F /* SceneDelegate.swift */; };
 		3CEDC2212B11F710004CBD6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDC2202B11F710004CBD6F /* ViewController.swift */; };
@@ -77,6 +82,12 @@
 
 /* Begin PBXFileReference section */
 		047F919A2B1256F9001EB577 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		047F91BF2B1286B1001EB577 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		047F91C02B128E85001EB577 /* postQuestionreply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postQuestionreply.swift; sourceTree = "<group>"; };
+		047F91C62B128F7E001EB577 /* postQuestionreplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postQuestionreplyModel.swift; sourceTree = "<group>"; };
+		047F91C82B129565001EB577 /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntity.swift; sourceTree = "<group>"; };
+		047F91CA2B12AA67001EB577 /* QuestionGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGetService.swift; sourceTree = "<group>"; };
+		047F91CC2B12AA8F001EB577 /* QuestionListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListEntity.swift; sourceTree = "<group>"; };
 		3CEDC2192B11F710004CBD6F /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEDC21C2B11F710004CBD6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEDC21E2B11F710004CBD6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -292,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2442B11F90C004CBD6F /* ExampleEntity.swift */,
+				047F91C62B128F7E001EB577 /* postQuestionreplyModel.swift */,
 				3CEFB17D2B12988400BCC479 /* OnboardingEntity.swift */,
 				A42E1A482B12867E0061614E /* CardEntity.swift */,
 				A42E1A4A2B128F710061614E /* QuestionListEntity.swift */,
@@ -304,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				3CEDC2462B11F916004CBD6F /* ExampleService.swift */,
+				047F91C02B128E85001EB577 /* postQuestionreply.swift */,
 				3CEFB17F2B12993500BCC479 /* OnboardingService.swift */,
 				A42E1A4C2B128F9B0061614E /* QuestionGetService.swift */,
 				CA9DAAB82B12938300135337 /* GetHistoryService.swift */,
@@ -645,6 +658,7 @@
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
 				A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */,
 				A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */,
+				047F91C12B128E85001EB577 /* postQuestionreply.swift in Sources */,
 				CA9DAABB2B129D2900135337 /* GetHistoryDataProtocol.swift in Sources */,
 				A42E1A302B124CC90061614E /* MainView.swift in Sources */,
 				CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */,
@@ -661,6 +675,7 @@
 				CA9DAAB72B1292D200135337 /* GetHistoryEntity.swift in Sources */,
 				A42E1A022B1200B30061614E /* GenericResponse.swift in Sources */,
 				A42E1A282B124CA20061614E /* CardFrontView.swift in Sources */,
+				047F91C92B129565001EB577 /* CardEntity.swift in Sources */,
 				A42E1A0A2B123D1C0061614E /* UIImage+.swift in Sources */,
 				3CEDC2452B11F90C004CBD6F /* ExampleEntity.swift in Sources */,
 				A42E1A2C2B124CB30061614E /* QuestionView.swift in Sources */,
@@ -674,6 +689,8 @@
 				CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */,
 				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
 				3CEDC2502B1255F6004CBD6F /* OnboardingNicknameViewController.swift in Sources */,
+				047F91C72B128F7E001EB577 /* postQuestionreplyModel.swift in Sources */,
+				047F91CB2B12AA67001EB577 /* QuestionGetService.swift in Sources */,
 				3CEDC24B2B11F934004CBD6F /* ExampleView.swift in Sources */,
 				047F919B2B1256F9001EB577 /* QuestionViewController.swift in Sources */,
 			);
@@ -759,6 +776,7 @@
 		};
 		3CEDC22C2B11F711004CBD6F /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = CA9DAAAE2B1286AE00135337 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
