@@ -12,18 +12,19 @@ class HistoryViewController: UIViewController {
     private let historyView = HistoryView()
     private lazy var titleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .SOPTWhite
         return view
     }()
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "그땐 몇살이었지?"
         label.textColor = .white
+        label.font = .pretendardBold(size: 20)
         return label
     }()
     private lazy var mainBtn: UIBarButtonItem = {
-        let btn = UIBarButtonItem(image: UIImage(named: "Q1_ic_left_arrow"), style: .done, target: self, action: #selector(goToMain))
-        btn.tintColor = UIColor(hex: "#6F6F6F")
+        let btn = UIBarButtonItem(image: ImageLiterals.ic_left_arrow, style: .done, target: self, action: #selector(goToMain))
+        btn.tintColor = .SOPTGrey600
         return btn
     }()
     
@@ -40,10 +41,10 @@ class HistoryViewController: UIViewController {
         
         self.navigationItem.titleView = titleView
         self.navigationItem.leftBarButtonItem = mainBtn
-        self.navigationController?.navigationBar.barTintColor = .black
+        self.navigationController?.navigationBar.barTintColor = .SOPTBlack
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.leftItemsSupplementBackButton = true
-        self.navigationController?.navigationBar.backgroundColor = .black
+        self.navigationController?.navigationBar.backgroundColor = .SOPTBlack
         setUI()
         setHierarchy()
         setLayout()
