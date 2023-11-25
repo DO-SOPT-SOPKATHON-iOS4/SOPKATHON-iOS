@@ -51,21 +51,19 @@
 		A42E1A0F2B123D770061614E /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A0E2B123D770061614E /* UIButton+.swift */; };
 		A42E1A112B123EE60061614E /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A102B123EE60061614E /* UILabel+.swift */; };
 		A42E1A182B124BDF0061614E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A172B124BDF0061614E /* HistoryView.swift */; };
-		A42E1A1A2B124BE70061614E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A192B124BE70061614E /* HistoryViewController.swift */; };
 		A42E1A282B124CA20061614E /* CardFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A272B124CA20061614E /* CardFrontView.swift */; };
 		A42E1A2C2B124CB30061614E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2B2B124CB30061614E /* QuestionView.swift */; };
 		A42E1A302B124CC90061614E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2F2B124CC90061614E /* MainView.swift */; };
-		A42E1A322B124CD40061614E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A312B124CD40061614E /* MainViewController.swift */; };
-		A42E1A342B124CDC0061614E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A332B124CDC0061614E /* OnboardingView.swift */; };
-		A42E1A362B124CE60061614E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A352B124CE60061614E /* OnboardingViewController.swift */; };
+		A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */; };
 		A42E1A3E2B125D4C0061614E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A3D2B125D4C0061614E /* CardViewController.swift */; };
 		A42E1A402B1267340061614E /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A3F2B1267340061614E /* CardBackView.swift */; };
 		A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A432B127E3F0061614E /* CardFrontViewController.swift */; };
 		A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A452B127E7C0061614E /* CardBackViewController.swift */; };
-		A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */; };
 		CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA62B12563A00135337 /* HistoryViewController.swift */; };
 		CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */; };
 		CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */; };
+		CA9DAAB32B12875700135337 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB22B12875700135337 /* SplashView.swift */; };
+		CA9DAAB52B12876700135337 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAB42B12876700135337 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,7 +95,6 @@
 		3CEDC2642B127A6C004CBD6F /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		3CEDC2652B127A6C004CBD6F /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3CEDC2662B127A6C004CBD6F /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		3CEDC26A2B12824F004CBD6F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
 		A42E19F52B11FFF70061614E /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		A42E19F72B1200130061614E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -112,19 +109,20 @@
 		A42E1A0E2B123D770061614E /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		A42E1A102B123EE60061614E /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		A42E1A172B124BDF0061614E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		A42E1A192B124BE70061614E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		A42E1A272B124CA20061614E /* CardFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontView.swift; sourceTree = "<group>"; };
 		A42E1A2B2B124CB30061614E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		A42E1A2F2B124CC90061614E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		A42E1A312B124CD40061614E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNicknameView.swift; sourceTree = "<group>"; };
 		A42E1A3D2B125D4C0061614E /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		A42E1A3F2B1267340061614E /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 		A42E1A432B127E3F0061614E /* CardFrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontViewController.swift; sourceTree = "<group>"; };
 		A42E1A452B127E7C0061614E /* CardBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackViewController.swift; sourceTree = "<group>"; };
-		A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNicknameView.swift; sourceTree = "<group>"; };
 		CA9DAAA62B12563A00135337 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
+		CA9DAAAE2B1286AE00135337 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		CA9DAAB22B12875700135337 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CA9DAAB42B12876700135337 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +164,7 @@
 				3CEDC2322B11F7BB004CBD6F /* Network */,
 				3CEDC2312B11F7AA004CBD6F /* Presentation */,
 				3CEDC22A2B11F711004CBD6F /* Info.plist */,
-				3CEDC26A2B12824F004CBD6F /* Config.xcconfig */,
+				CA9DAAAE2B1286AE00135337 /* Config.xcconfig */,
 			);
 			path = "SOPKATHON-iOS";
 			sourceTree = "<group>";
@@ -174,6 +172,7 @@
 		3CEDC2312B11F7AA004CBD6F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CA9DAAAF2B12872600135337 /* SplashScene */,
 				A42E1A242B124C2C0061614E /* OnboardingScene */,
 				A42E1A212B124C170061614E /* MainScene */,
 				A42E1A1E2B124C020061614E /* QuestionScene */,
@@ -482,6 +481,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		CA9DAAAF2B12872600135337 /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DAAB12B12874100135337 /* View */,
+				CA9DAAB02B12873900135337 /* ViewController */,
+			);
+			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		CA9DAAB02B12873900135337 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DAAB42B12876700135337 /* SplashViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CA9DAAB12B12874100135337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DAAB22B12875700135337 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -585,6 +609,7 @@
 				A42E1A062B1200FA0061614E /* URLConstant.swift in Sources */,
 				A42E1A402B1267340061614E /* CardBackView.swift in Sources */,
 				A42E1A002B1200A70061614E /* NetworkResult.swift in Sources */,
+				CA9DAAB32B12875700135337 /* SplashView.swift in Sources */,
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
 				A42E1A442B127E3F0061614E /* CardFrontViewController.swift in Sources */,
 				A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */,
@@ -607,8 +632,8 @@
 				3CEDC2602B126AF1004CBD6F /* MainHistoryView.swift in Sources */,
 				CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */,
 				A42E1A082B1201070061614E /* Config.swift in Sources */,
-				A42E1A2E2B124CC00061614E /* QuestionViewController.swift in Sources */,
 				A42E1A462B127E7C0061614E /* CardBackViewController.swift in Sources */,
+				CA9DAAB52B12876700135337 /* SplashViewController.swift in Sources */,
 				CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */,
 				A42E19FE2B12009D0061614E /* NetworkConstant.swift in Sources */,
 				3CEDC2502B1255F6004CBD6F /* OnboardingNicknameViewController.swift in Sources */,
@@ -633,7 +658,7 @@
 /* Begin XCBuildConfiguration section */
 		3CEDC22B2B11F711004CBD6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEDC26A2B12824F004CBD6F /* Config.xcconfig */;
+			baseConfigurationReference = CA9DAAAE2B1286AE00135337 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -697,7 +722,7 @@
 		};
 		3CEDC22C2B11F711004CBD6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEDC26A2B12824F004CBD6F /* Config.xcconfig */;
+			baseConfigurationReference = CA9DAAAE2B1286AE00135337 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
