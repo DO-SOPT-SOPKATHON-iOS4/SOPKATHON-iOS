@@ -15,22 +15,33 @@ final class CardFrontView: UIView {
     
     let frontView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .SOPTYellow
         return view
     }()
     
     private let imageView: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "apple.logo")
+        image.layer.cornerRadius = 30
         return image
+    }()
+    
+    private let detailTitle: UILabel = {
+        let label = UILabel()
+        label.text = "당신은"
+        label.numberOfLines = 1
+        label.font = .pretendardBold(size: 20)
+        label.textColor = .SOPTBlack
+        label.textAlignment = .center
+        return label
     }()
     
     private let detailLabel: UILabel = {
         let label = UILabel()
-        label.text = "당신은\n어리숙한 귀요미"
-        label.numberOfLines = 2
-        label.textColor = .black
+        label.text = "어리숙한 귀요미"
+        label.numberOfLines = 1
+        label.textColor = .SOPTBlack
         label.textAlignment = .center
+        label.font = .pretendardBold(size: 32)
         return label
     }()
     
@@ -42,16 +53,18 @@ final class CardFrontView: UIView {
     
     private let ageLabel: UILabel = {
         let label = UILabel()
-        label.text = "dd살"
-        label.textColor = .black
+        label.text = "13살"
+        label.textColor = .SOPTBlack
         label.textAlignment = .center
+        label.font = .pretendardBold(size: 28)
         return label
     }()
     
     private let touchLabel: UILabel = {
         let label = UILabel()
         label.text = "카드를 터치해주세요!"
-        label.textColor = .black
+        label.textColor = .SOPTGrey400
+        label.font = .pretendardBold(size: 20)
         return label
     }()
     
@@ -74,21 +87,21 @@ final class CardFrontView: UIView {
 // MARK: - Extensions
 extension CardFrontView {
     func setUI() {
-        backgroundColor = .blue
+        frontView.layer.cornerRadius = 50
+        backgroundColor = .SOPTBlack
     }
     
     func setHierarchy() {
-        frontView.addSubviews(imageView, detailLabel, seperatorView, ageLabel)
-        addSubview(frontView)
+        frontView.addSubviews(imageView, detailTitle, detailLabel, seperatorView, ageLabel)
+        addSubviews(frontView, touchLabel)
     }
     
     func setLayout() {
         frontView.snp.makeConstraints {
-//            $0.top.equalTo(safeAreaLayoutGuide).offset(31)
-//            $0.centerX.equalToSuperview()
-//            $0.width.equalTo(305)
-//            $0.height.equalTo(441)
-            $0.edges.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide).offset(31)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(305)
+            $0.height.equalTo(441)
         }
         
         imageView.snp.makeConstraints {
@@ -97,8 +110,13 @@ extension CardFrontView {
             $0.size.equalTo(245)
         }
         
-        detailLabel.snp.makeConstraints {
+        detailTitle.snp.makeConstraints {
             $0.top.equalTo(imageView.snp.bottom).offset(16)
+            $0.centerX.equalToSuperview()
+        }
+        
+        detailLabel.snp.makeConstraints {
+            $0.top.equalTo(detailTitle.snp.bottom)
             $0.centerX.equalToSuperview()
         }
         
@@ -112,6 +130,17 @@ extension CardFrontView {
             $0.top.equalTo(seperatorView.snp.bottom).offset(4)
             $0.leading.trailing.equalToSuperview()
         }
+        
+        touchLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(130)
+        }
+    }
+    
+    func setDataBind(model: CardEntity) {
+        imageView.kfSetImage(url: model.imgURL)
+        detailLabel.text = model.nickname
+        ageLabel.text = "\(model.resultAge)살"
     }
 }
 

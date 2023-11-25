@@ -11,6 +11,8 @@ final class CardFrontViewController: UIViewController {
     
     private lazy var cardfront = CardFrontView()
     
+    private var questionListEntity: [QuestionListEntity] = []
+    
     override func loadView() {
         super.loadView()
         
@@ -21,6 +23,7 @@ final class CardFrontViewController: UIViewController {
         super.viewDidLoad()
 
         setGesture()
+        getQuestionListAPI()
     }
 }
 
@@ -35,5 +38,26 @@ extension CardFrontViewController {
         nav.modalTransitionStyle = .flipHorizontal
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true)
+    }
+}
+
+extension CardFrontViewController {
+    func getQuestionListAPI() {
+        QuestionGetService.shared.getQueestionListAPI { networkResult in
+            print(networkResult)
+            switch networkResult {
+            case .success(let data):
+                if let data = data as? GenericResponse<[QuestionListEntity]> {
+                    dump(data)
+                    if let listData = data.data {
+                        self.questionListEntity = listData
+                    }
+                }
+            case .requestErr, .serverErr:
+                print("오류발생")
+            default:
+                break
+            }
+        }
     }
 }
