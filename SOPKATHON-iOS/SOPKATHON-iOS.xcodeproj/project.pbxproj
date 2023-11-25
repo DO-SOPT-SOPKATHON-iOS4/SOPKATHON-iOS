@@ -51,9 +51,9 @@
 		A42E1A2E2B124CC00061614E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2D2B124CC00061614E /* QuestionViewController.swift */; };
 		A42E1A302B124CC90061614E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A2F2B124CC90061614E /* MainView.swift */; };
 		A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */; };
-		A42E1A322B124CD40061614E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E1A312B124CD40061614E /* MainViewController.swift */; };
 		CA9DAAA72B12563A00135337 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA62B12563A00135337 /* HistoryViewController.swift */; };
 		CA9DAAAA2B1261FE00135337 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */; };
+		CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,9 +100,9 @@
 		A42E1A2D2B124CC00061614E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A42E1A2F2B124CC90061614E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A42E1A332B124CDC0061614E /* OnboardingNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNicknameView.swift; sourceTree = "<group>"; };
-		A42E1A312B124CD40061614E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CA9DAAA62B12563A00135337 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CA9DAAA92B1261FE00135337 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +230,7 @@
 			children = (
 				3CEDC23A2B11F8AF004CBD6F /* FontLiterals.swift */,
 				3CEDC23C2B11F8B8004CBD6F /* ColorLiterals.swift */,
+				CA9DAAAB2B12799B00135337 /* ImageLiterals.swift */,
 			);
 			path = Literals;
 			sourceTree = "<group>";
@@ -541,6 +542,7 @@
 				A42E1A042B1200E10061614E /* BaseService.swift in Sources */,
 				A42E1A342B124CDC0061614E /* OnboardingNicknameView.swift in Sources */,
 				A42E1A302B124CC90061614E /* MainView.swift in Sources */,
+				CA9DAAAC2B12799B00135337 /* ImageLiterals.swift in Sources */,
 				A42E1A112B123EE60061614E /* UILabel+.swift in Sources */,
 				A42E19F62B11FFF70061614E /* UIStackView+.swift in Sources */,
 				3CEDC21F2B11F710004CBD6F /* SceneDelegate.swift in Sources */,
