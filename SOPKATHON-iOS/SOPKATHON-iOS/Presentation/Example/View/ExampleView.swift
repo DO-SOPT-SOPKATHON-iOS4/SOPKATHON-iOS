@@ -26,7 +26,7 @@ final class ExampleView: UIView {
     
     private lazy var button: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .TablingPrimary
+//        button.backgroundColor = .TablingPrimary
         button.setTitle("버튼", for: .normal)
         button.layer.cornerRadius = 24
         return button
