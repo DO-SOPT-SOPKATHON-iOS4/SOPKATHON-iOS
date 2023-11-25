@@ -97,6 +97,7 @@
 		3CEDC2642B127A6C004CBD6F /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		3CEDC2652B127A6C004CBD6F /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3CEDC2662B127A6C004CBD6F /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		3CEDC26A2B12824F004CBD6F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A42E19F32B11FFD30061614E /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
 		A42E19F52B11FFF70061614E /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		A42E19F72B1200130061614E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 				3CEDC2322B11F7BB004CBD6F /* Network */,
 				3CEDC2312B11F7AA004CBD6F /* Presentation */,
 				3CEDC22A2B11F711004CBD6F /* Info.plist */,
+				3CEDC26A2B12824F004CBD6F /* Config.xcconfig */,
 			);
 			path = "SOPKATHON-iOS";
 			sourceTree = "<group>";
@@ -631,6 +633,7 @@
 /* Begin XCBuildConfiguration section */
 		3CEDC22B2B11F711004CBD6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEDC26A2B12824F004CBD6F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -694,6 +697,7 @@
 		};
 		3CEDC22C2B11F711004CBD6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEDC26A2B12824F004CBD6F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
