@@ -20,6 +20,7 @@ class QuestionViewController: UIViewController {
     var nickName: String = "아라"
     
     private var questionListEntity: [QuestionListEntity] = []
+    private var cardEntidy: CardEntity?
     
     let cardStack = SwipeCardStack()
       
@@ -137,16 +138,33 @@ class QuestionViewController: UIViewController {
         
         if progressView.progress == 1.0 {
             postQuestionreply.shared.postInviteAPI(nickname: nickName, result: replyArray, completion: { networkResult in
-//                switch networkResult {
-//                case .success(let data):
-//                    
-//                default:
-//                    
-//                }
-                let nav = CardFrontViewController()
-                self.navigationController?.pushViewController(CardFrontViewController(), animated: true)
+                switch networkResult {
+                case .success(let data):
+                    if let data = data as? GenericResponse<CardEntity> {
+                        dump(data)
+                        if let listData = data.data {
+                            let nav = CardFrontViewController()
+                            nav.historyContent = listData.content
+                            nav.historyTitle = listData.title
+                            nav.cardfront.setDataBind(model: listData)
+                            self.navigationController?.pushViewController(nav, animated: false)
+                            self.cardEntidy = listData
+//                            self.historyListEntity = listData
+                        }
+//                        DispatchQueue.main.async {
+//                            let nav = CardFrontViewController()
+//                            nav.cardfront.setDataBind(model: self.cardEntidy)
+//                            self.navigationController?.pushViewController(CardFrontViewController(), animated: true)
+//                        }
+                    }
+                case .requestErr, .serverErr:
+                    print("오류발생")
+                default:
+                    break
+                }
             })
         }
+        
         
         if progressView.progress > 1.0 {
             progressView.progress = 1.0

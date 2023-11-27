@@ -69,6 +69,7 @@ final class CardFrontView: UIView {
         label.font = .pretendardBold(size: 20)
         return label
     }()
+
     
     // MARK: - Life Cycles
     
@@ -143,6 +144,7 @@ extension CardFrontView {
         imageView.kfSetImage(url: model.imgURL1)
         detailLabel.text = model.nickname
         ageLabel.text = "\(model.resultAge)살"
+        
     }
     
     func setHistoryBind(model: GetHistoryData) {

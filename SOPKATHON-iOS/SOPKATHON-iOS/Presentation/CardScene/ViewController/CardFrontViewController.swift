@@ -41,7 +41,10 @@ final class CardFrontViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setNavigationButton()
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+//        self.navigationItem.leftBarButtonItem?.isHidden = true
+        self.navigationController?.navBackButton()
+//        setNavigationButton()
         setGesture()
     }
 }
@@ -50,6 +53,20 @@ extension CardFrontViewController {
     func setGesture() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_:)))
         view.addGestureRecognizer(tapGesture)
+        
+        switch self.historyTitle {
+        case "어리숙한 귀요미":
+            self.cardfront.frontView.backgroundColor = .SOPTYellow
+        case "말랑한 깜찍이":
+            self.cardfront.frontView.backgroundColor = .SOPTOrange
+        case "성장중인 새싹이":
+            self.cardfront.frontView.backgroundColor = .SOPTBlue
+        case "성숙한 멋쟁이":
+            self.cardfront.frontView.backgroundColor = .SOPTGreen
+        case "진정한 어른이":
+            self.cardfront.frontView.backgroundColor = .SOPTRed
+        default: break
+        }
     }
     
     @objc func viewTapped(_ gesture: UITapGestureRecognizer) {
